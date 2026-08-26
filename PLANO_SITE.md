@@ -19,10 +19,10 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 ### 2. Direção visual
 
 - [x] Criar um moodboard com cal branca, terracota, madeira, mel, papel antigo e verde-serra.
-- [ ] Desenhar o hero: silhueta de Alte + pastel/sol + botão **“Entre”**.
+- [x] Desenhar o primeiro protótipo do hero: silhueta provisória + pastel/sol + botão **“Entre”**.
 - [ ] Transformar os quatro cerros em quatro capítulos visuais da página.
 - [ ] Definir tipografia, logótipo/assinatura e pequenos ícones inspirados no relevo em madeira.
-- [ ] Aprovar primeiro o layout mobile, porque quase todo o vídeo disponível é vertical.
+- [ ] Aprovar o protótipo mobile-first, porque quase todo o vídeo disponível é vertical.
 
 ### 3. Pastel de nata 3D
 
