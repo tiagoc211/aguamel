@@ -20,7 +20,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 - [x] Criar um moodboard com cal branca, terracota, madeira, mel, papel antigo e verde-serra.
 - [x] Desenhar o primeiro protótipo do hero: silhueta provisória + pastel/sol + botão **“Entre”**.
-- [ ] Transformar os quatro cerros em quatro capítulos visuais da página.
+- [x] Transformar os quatro cerros em quatro capítulos visuais da página, com conteúdo provisório a validar.
 - [ ] Definir tipografia, logótipo/assinatura e pequenos ícones inspirados no relevo em madeira.
 - [ ] Aprovar o protótipo mobile-first, porque quase todo o vídeo disponível é vertical.
 
