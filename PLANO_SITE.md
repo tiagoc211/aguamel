@@ -18,7 +18,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 ### 2. Direção visual
 
-- [ ] Criar um moodboard com cal branca, terracota, madeira, mel, papel antigo e verde-serra.
+- [x] Criar um moodboard com cal branca, terracota, madeira, mel, papel antigo e verde-serra.
 - [ ] Desenhar o hero: silhueta de Alte + pastel/sol + botão **“Entre”**.
 - [ ] Transformar os quatro cerros em quatro capítulos visuais da página.
 - [ ] Definir tipografia, logótipo/assinatura e pequenos ícones inspirados no relevo em madeira.
