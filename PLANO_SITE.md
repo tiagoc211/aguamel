@@ -33,17 +33,16 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 ### 4. Estrutura da página
 
-- [ ] **Entrada:** fachada/porta, pastel-sol e convite “Entre”.
+- [ ] **Entrada:** usar o novo vídeo contínuo a entrar pela porta como fundo, mantendo o pastel-sol 2D e o convite “Entre”.
 - [x] **Os quatro cerros:** introdução única para a casa e o lugar, seguida pelo percurso visual dos quatro cerros.
 - [x] **Uma casa com história:** composição visual com a peça de madeira e fotografias antigas; identificação detalhada pendente da família.
 - [x] **Sabores de Alte:** estrutura visual provisória, com seleção de produtos por validar.
-- [x] **Da porta à varanda:** pequenos loops dos vídeos e destaque para o percurso pela casa.
 - [x] **Visite-nos:** estrutura, morada e mapa; horário, telefone e Instagram por validar.
 
 ### 5. Construção
 
-- [x] Preparar e comprimir os média usados nesta entrega: pastel WebP e dois loops de vídeo leves.
-- [x] Carregar e reproduzir os loops apenas perto da área visível, pausando-os fora do ecrã.
+- [x] Preparar e comprimir as imagens usadas nesta entrega.
+- [ ] Preparar e comprimir o novo vídeo de entrada quando estiver disponível.
 - [x] Construir a página responsiva e os movimentos de scroll, com melhoria progressiva e reduced motion.
 - [x] Adicionar SEO local, dados estruturados mínimos, canonical, sitemap, robots, Open Graph e favicon.
 - [x] Garantir contraste, texto alternativo, navegação por teclado e opção de reduzir animações.
@@ -53,7 +52,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 - [ ] Testar em iPhone, Android, Safari, Chrome e ligações móveis lentas.
 - [ ] Validar horários, telefone, mapa, traduções e créditos das imagens/modelo.
-- [x] Rever desempenho: dois loops de vídeo leves, sem 3D; imagens e partilha social otimizadas.
+- [x] Rever desempenho sem 3D; imagens e partilha social otimizadas. O vídeo final será revisto quando estiver disponível.
 - [ ] Fazer uma revisão final com a família para confirmar a história e os símbolos de Alte.
 - [ ] Publicar, ligar o domínio `aguamel.pt` e confirmar indexação e partilhas sociais.
 
@@ -61,7 +60,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 Um protótipo navegável apenas da página inicial, com:
 
-1. fachada e botão “Entre”;
+1. hero e botão “Entre”; vídeo de entrada pendente;
 2. pastel-sol 2D com rotação ligada ao scroll;
 3. silhueta dos quatro cerros;
 4. uma secção de história;

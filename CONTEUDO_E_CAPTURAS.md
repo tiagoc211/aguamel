@@ -42,3 +42,13 @@ Ainda precisamos de confirmar com a família:
 - [x] Exportar um recorte WebP transparente e otimizado.
 
 O site usa apenas este recorte fotográfico 2D. A rotação está ligada ao scroll e não existe qualquer modelo ou efeito 3D.
+
+## Vídeo de entrada — por captar
+
+- [ ] Gravar uma passagem contínua e estável, da rua para o interior da pastelaria.
+- [ ] Fazer uma versão horizontal e outra vertical, mantendo a porta e o eixo do percurso no centro para permitir diferentes recortes.
+- [ ] Apontar para 8–12 segundos úteis, sem zoom nem movimentos bruscos, e deixar cerca de 2 segundos estáveis no início e no fim.
+- [ ] Fixar foco e exposição antes de começar; preferir luz natural suave e evitar zonas queimadas ao atravessar a porta.
+- [ ] Evitar rostos reconhecíveis, matrículas e informação privada no enquadramento.
+
+O vídeo final será usado como fundo da secção inicial. Não é necessário gravar som ambiente.
