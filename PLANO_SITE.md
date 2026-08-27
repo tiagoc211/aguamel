@@ -35,7 +35,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [ ] **Entrada:** fachada/porta, pastel-sol e convite “Entre”.
 - [ ] **Os quatro cerros:** percurso animado pela silhueta de Alte.
 - [ ] **Uma casa com história:** madeira e fotografias antigas.
-- [ ] **Sabores de Alte:** produtos, ingredientes locais e pastelaria.
+- [x] **Sabores de Alte:** estrutura visual provisória, com seleção de produtos por validar.
 - [ ] **Da porta à varanda:** pequenos loops dos vídeos e destaque para a vista.
 - [ ] **Visite-nos:** mapa, horário, telefone, Instagram e indicações práticas.
 

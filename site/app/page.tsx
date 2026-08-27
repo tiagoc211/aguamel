@@ -77,6 +77,30 @@ export default function Home() {
         </ol>
       </section>
 
+      <section className="flavors" id="sabores" aria-labelledby="flavors-title">
+        <div className="flavors-visual" aria-hidden="true">
+          <div className="flavors-pastry"><div /></div>
+          <p>Receituário em preparação</p>
+        </div>
+
+        <div className="flavors-copy">
+          <p className="section-number">03 · Os sabores</p>
+          <h2 id="flavors-title">Do Algarve,<br />à mesa.</h2>
+          <p className="flavors-intro">Este capítulo será construído com a seleção real da casa. Por agora, reunimos as pistas que precisam de ser confirmadas — sem apresentar produtos que ainda não foram escolhidos.</p>
+
+          <ul className="ingredient-list" aria-label="Sabores a confirmar com a Água Mel">
+            <li><span>01</span><strong>Pastel de nata</strong><small>Protagonista</small></li>
+            <li><span>02</span><strong>Amêndoa</strong><small>A confirmar</small></li>
+            <li><span>03</span><strong>Figo</strong><small>A confirmar</small></li>
+            <li><span>04</span><strong>Alfarroba</strong><small>A confirmar</small></li>
+            <li><span>05</span><strong>Mel</strong><small>A confirmar</small></li>
+            <li><span>06</span><strong>Licores locais</strong><small>A confirmar</small></li>
+          </ul>
+
+          <p className="provisional-label">Seleção provisória · validar com a família</p>
+        </div>
+      </section>
+
       <section className="visit-preview" id="visitar" aria-label="Visitar Água Mel">
         <p>Água Mel · Largo José Cavaco Vieira · Alte</p>
       </section>
