@@ -30,6 +30,8 @@ export default function Home() {
               width={1024}
               height={1024}
               priority
+              loading="eager"
+              sizes="(min-width: 760px) 39vw, 270px"
             />
           </div>
         </div>
@@ -124,6 +126,7 @@ export default function Home() {
               alt=""
               width={1024}
               height={1024}
+              sizes="(min-width: 760px) 36vw, 300px"
             />
           </div>
           <p>Receituário em preparação</p>

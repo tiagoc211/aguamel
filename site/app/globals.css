@@ -295,7 +295,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .cerro-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; padding: 0 7vw 6px; }
   .cerro-card { min-width: 0; min-height: 390px; }
   .cerro-card h3 { font-size: clamp(1.8rem, 3.2vw, 3rem); }
-  .memories { display: grid; grid-template-columns: minmax(340px, .72fr) minmax(500px, 1.28fr); gap: 7vw; padding: 120px 7vw; }
+  .memories { display: grid; grid-template-columns: minmax(260px, .72fr) minmax(340px, 1.28fr); gap: 7vw; padding: 120px 7vw; }
   .memories-copy { align-self: center; }
   .memories-gallery { gap: 22px; margin-top: 0; }
   .memory-image-detail { margin-top: 110px; }
