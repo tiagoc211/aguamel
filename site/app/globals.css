@@ -103,7 +103,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 
 .sun-stage { position: absolute; right: -68px; bottom: 152px; z-index: 2; width: 270px; aspect-ratio: 1; filter: drop-shadow(0 22px 26px rgb(74 45 35 / 18%)); }
 .pastry-sun { width: 100%; height: 100%; }
-.pastry-image { display: block; width: 100%; height: 100%; object-fit: contain; transform-origin: center; animation: pastry-spin 48s linear infinite; }
+.pastry-image { display: block; width: 100%; height: 100%; object-fit: contain; transform-origin: center; }
 .wood-horizon {
   position: absolute; right: 0; bottom: 0; left: 0; z-index: 3; height: 210px; overflow: hidden;
   background: repeating-linear-gradient(3deg, transparent 0 13px, rgb(243 239 229 / 5%) 14px 15px), var(--wood);
@@ -245,6 +245,16 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 
 @keyframes pastry-spin { to { transform: rotate(360deg); } }
 @keyframes reveal-up { from { opacity: 0; transform: translateY(38px); } to { opacity: 1; transform: translateY(0); } }
+
+@supports (animation-timeline: scroll()) {
+  .pastry-image {
+    animation-name: pastry-spin;
+    animation-duration: 1ms;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: scroll(root block);
+  }
+}
 
 @supports (animation-timeline: view()) {
   :where(

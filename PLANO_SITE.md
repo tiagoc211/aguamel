@@ -29,6 +29,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [x] Manter uma imagem 2D leve, sem viewer 3D nem dependências externas.
 - [x] Substituir a ilustração pelo pastel real da Água Mel, preservando cor, zonas caramelizadas e massa folhada.
 - [x] Preparar um recorte WebP transparente e otimizado a partir da fotografia real.
+- [x] Ligar a rotação 2D ao progresso do scroll, sem movimento contínuo quando a página está parada.
 
 ### 4. Estrutura da página
 
