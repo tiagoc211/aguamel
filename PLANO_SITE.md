@@ -22,7 +22,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [x] Desenhar o primeiro protótipo do hero: silhueta provisória + pastel/sol + botão **“Entre”**.
 - [x] Transformar os quatro cerros em quatro capítulos visuais da página, com conteúdo provisório a validar.
 - [x] Definir sistema tipográfico e assinatura textual; os ícones ficam para depois da fotografia completa da madeira.
-- [ ] Aprovar o protótipo mobile-first, porque quase todo o vídeo disponível é vertical.
+- [x] Aprovar o protótipo mobile-first, porque quase todo o vídeo disponível é vertical.
 
 ### 3. Pastel de nata 3D
 

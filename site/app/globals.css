@@ -174,6 +174,10 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 
 @keyframes breathe { 0%, 100% { transform: rotate(-7deg) scale(1); } 50% { transform: rotate(-4deg) scale(1.025); } }
 
+@media (max-width: 360px) {
+  .sun-stage { right: -80px; bottom: 135px; width: 210px; }
+}
+
 @media (min-width: 760px) {
   .site-header { padding: 38px 52px 0; grid-template-columns: 1fr auto 1fr; }
   .location { grid-column: 2; grid-row: 1; }
