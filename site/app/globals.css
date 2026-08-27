@@ -170,7 +170,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .memory-image-detail img { object-position: 50% 20%; }
 .memory-image figcaption { padding-top: 12px; border-top: 1px solid rgb(74 45 35 / 30%); color: var(--terracotta); font-size: .56rem; font-weight: 700; letter-spacing: .11em; line-height: 1.45; text-transform: uppercase; }
 
-.cheeses { position: relative; height: 140svh; overflow: clip; background: #12100f; color: var(--chalk); }
+.cheeses { position: relative; height: 180svh; overflow: clip; background: #12100f; color: var(--chalk); }
 .cheeses-scene { position: sticky; top: 0; height: 100svh; min-height: 700px; overflow: hidden; isolation: isolate; }
 .cheeses-scene::before {
   content: '';
@@ -208,7 +208,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   transform: translate(-50%, -50%) scale(.78);
   will-change: opacity, transform;
 }
-.cheese-piece img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.cheese-piece img { display: block; width: 100%; height: 100%; object-fit: contain; clip-path: circle(47% at 50% 50%); }
 .cheese-label {
   position: absolute;
   top: 50%;

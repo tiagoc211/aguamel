@@ -26,9 +26,8 @@ export default function Queijinhos() {
     const update = () => {
       frame = 0;
       const sectionTop = section.getBoundingClientRect().top;
-      const animationStart = window.innerHeight * 0.92;
-      const animationEnd = window.innerHeight * 0.12;
-      const split = clamp((animationStart - sectionTop) / (animationStart - animationEnd));
+      const animationDistance = Math.max(window.innerHeight * 0.5, 360);
+      const split = clamp(-sectionTop / animationDistance);
       const labelProgress = clamp((split - 0.58) / 0.28);
       const wide = window.innerWidth >= 760;
       const startX = wide ? 92 : 58;
@@ -98,6 +97,7 @@ export default function Queijinhos() {
                 width={640}
                 height={640}
                 sizes="(min-width: 760px) 160px, 100px"
+                unoptimized
               />
               <p className="cheese-label">
                 <span>{product.number} · Queijinho de</span>

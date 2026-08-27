@@ -39,7 +39,7 @@ The panel and photographs preserve images of Alte. Names, dates and stories will
 
 ### Six small flavours.
 
-The six queijinhos begin together and separate as the section enters, then pause briefly so all six names can be seen before the page continues. Each name appears beside its product, with all six visible at the same time.
+The six queijinhos begin together. Only once the section fills the screen do they separate with the scroll, followed by a brief pause so all six names can be seen before the page continues.
 
 - Coconut
 - Chocolate

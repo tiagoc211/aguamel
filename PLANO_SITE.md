@@ -36,7 +36,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [ ] **Entrada:** usar o novo vídeo contínuo a entrar pela porta como fundo, mantendo o pastel-sol 2D e o convite “Entre”.
 - [x] **Os quatro cerros:** introdução única para a casa e o lugar, seguida pelo percurso visual dos quatro cerros.
 - [x] **Uma casa com história:** composição visual com a peça de madeira e fotografias antigas; identificação detalhada pendente da família.
-- [x] **Os queijinhos:** fotografia conjunta, separação em scroll com uma pausa curta e seis nomes visíveis junto aos produtos.
+- [x] **Os queijinhos:** fotografia conjunta; a separação começa apenas quando a secção ocupa todo o ecrã e termina com uma pausa curta para os seis nomes.
 - [x] **Visite-nos:** estrutura, morada e mapa; horário, telefone e Instagram por validar.
 
 ### 5. Construção
