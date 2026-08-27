@@ -33,12 +33,12 @@ Ainda precisamos de confirmar com a família:
 - [ ] Fotografias individuais das imagens históricas, direitas e sem reflexos.
 - [ ] Uma pequena gravação horizontal percorrendo a peça muito lentamente.
 
-## Captação futura do pastel 3D próprio
+## Pastel 2D — concluído
 
-- [ ] Escolher um pastel visualmente representativo da Água Mel.
-- [ ] Fotografá-lo sobre fundo mate e uniforme, com luz difusa.
-- [ ] Fazer 30–50 fotografias à volta do pastel em duas alturas diferentes.
-- [ ] Não mover o pastel ou alterar a luz durante a sequência.
-- [ ] Fotografar também a parte superior e detalhes da massa folhada.
+- [x] Escolher um pastel visualmente representativo da Água Mel.
+- [x] Fotografar o pastel de cima em quatro variações.
+- [x] Escolher o enquadramento mais perpendicular e centrado.
+- [x] Remover prato, guardanapo e metadados da fotografia selecionada.
+- [x] Exportar um recorte WebP transparente e otimizado.
 
-Estas imagens permitirão criar um modelo mais autêntico do que um pastel genérico encontrado online.
+O site usa apenas este recorte fotográfico 2D. A rotação está ligada ao scroll e não existe qualquer modelo ou efeito 3D.

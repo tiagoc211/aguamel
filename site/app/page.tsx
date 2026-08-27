@@ -83,6 +83,39 @@ export default function Home() {
         </ol>
       </section>
 
+      <section className="memories" id="memorias" aria-labelledby="memories-title">
+        <div className="memories-copy">
+          <p className="section-number">02 · Memórias</p>
+          <h2 id="memories-title">Madeira, retratos,<br />lugares.</h2>
+          <p>A peça e as fotografias guardam imagens de Alte. Os nomes, as datas e as histórias serão acrescentados depois de confirmados com a família.</p>
+        </div>
+
+        <div className="memories-gallery">
+          <figure className="memory-image memory-image-main">
+            <div className="memory-frame">
+              <Image
+                src="/images/history-wood.webp"
+                alt="Painel de madeira da Água Mel com a silhueta de Alte e fotografias antigas"
+                width={1000}
+                height={1778}
+              />
+            </div>
+            <figcaption>A peça · detalhes por identificar</figcaption>
+          </figure>
+          <figure className="memory-image memory-image-detail">
+            <div className="memory-frame">
+              <Image
+                src="/images/history-photos.webp"
+                alt="Quatro fotografias antigas de Alte emolduradas na parede da Água Mel"
+                width={1000}
+                height={1778}
+              />
+            </div>
+            <figcaption>Arquivo da casa · datas por confirmar</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section className="flavors" id="sabores" aria-labelledby="flavors-title">
         <div className="flavors-visual" aria-hidden="true">
           <div className="flavors-pastry">
@@ -98,7 +131,7 @@ export default function Home() {
         </div>
 
         <div className="flavors-copy">
-          <p className="section-number">02 · Os sabores</p>
+          <p className="section-number">03 · Os sabores</p>
           <h2 id="flavors-title">Do Algarve,<br />à mesa.</h2>
           <p className="flavors-intro">Este capítulo será construído com a seleção real da casa. Por agora, reunimos as pistas que precisam de ser confirmadas — sem apresentar produtos que ainda não foram escolhidos.</p>
 
@@ -117,7 +150,7 @@ export default function Home() {
 
       <section className="journey" id="percurso" aria-labelledby="journey-title">
         <div className="journey-heading">
-          <p className="section-number">03 · Da porta à varanda</p>
+          <p className="section-number">04 · Da porta à varanda</p>
           <h2 id="journey-title">Entre devagar.<br />A vista espera.</h2>
           <p className="journey-intro">Da rua para dentro da casa, um percurso breve entre madeira, fotografias e a luz de Alte.</p>
         </div>
@@ -136,7 +169,7 @@ export default function Home() {
 
       <section className="visit" id="visitar" aria-labelledby="visit-title">
         <div className="visit-heading">
-          <p className="section-number">04 · Visite-nos</p>
+          <p className="section-number">05 · Visite-nos</p>
           <h2 id="visit-title">A porta está<br />em Alte.</h2>
           <p>Quando os dados da casa estiverem confirmados, encontrará aqui tudo o que precisa para planear a visita.</p>
         </div>

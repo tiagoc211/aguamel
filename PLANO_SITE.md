@@ -35,7 +35,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 - [ ] **Entrada:** fachada/porta, pastel-sol e convite “Entre”.
 - [x] **Os quatro cerros:** introdução única para a casa e o lugar, seguida pelo percurso visual dos quatro cerros.
-- [ ] **Uma casa com história:** madeira e fotografias antigas.
+- [x] **Uma casa com história:** composição visual com a peça de madeira e fotografias antigas; identificação detalhada pendente da família.
 - [x] **Sabores de Alte:** estrutura visual provisória, com seleção de produtos por validar.
 - [x] **Da porta à varanda:** pequenos loops dos vídeos e destaque para o percurso pela casa.
 - [x] **Visite-nos:** estrutura, morada e mapa; horário, telefone e Instagram por validar.
@@ -52,7 +52,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 - [ ] Testar em iPhone, Android, Safari, Chrome e ligações móveis lentas.
 - [ ] Validar horários, telefone, mapa, traduções e créditos das imagens/modelo.
-- [x] Rever desempenho: página inicial leve, sem vídeo ou 3D; imagem social otimizada.
+- [x] Rever desempenho: dois loops de vídeo leves, sem 3D; imagens e partilha social otimizadas.
 - [ ] Fazer uma revisão final com a família para confirmar a história e os símbolos de Alte.
 - [ ] Publicar, ligar o domínio `aguamel.pt` e confirmar indexação e partilhas sociais.
 
@@ -61,7 +61,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 Um protótipo navegável apenas da página inicial, com:
 
 1. fachada e botão “Entre”;
-2. pastel-sol estático;
+2. pastel-sol 2D com rotação ligada ao scroll;
 3. silhueta dos quatro cerros;
 4. uma secção de história;
 5. uma secção de visita/contactos.
