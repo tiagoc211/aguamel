@@ -52,3 +52,14 @@ O site usa apenas este recorte fotográfico 2D. A rotação está ligada ao scro
 - [ ] Evitar rostos reconhecíveis, matrículas e informação privada no enquadramento.
 
 O vídeo final será usado como fundo da secção inicial. Não é necessário gravar som ambiente.
+
+## Dados públicos encontrados — confirmar antes de publicar
+
+Pesquisa feita em 27 de agosto de 2026:
+
+- O [site atual da Água Mel](https://aguamel.pt/) mostra o telefone `+351 289 478 338`.
+- Diretórios recentes também associam esse telefone à morada Largo José Cavaco Vieira, 8100-012 Alte.
+- Os horários públicos não são consistentes: algumas fontes indicam segunda a sábado, 09:00–18:00; a [Rota da Dieta Mediterrânica](https://www.rotadietamediterranica.pt/pt/rota-da-dieta-mediterranica/restauracao/padaria-pastelaria/pastelaria-agua-mel) indica 09:00–19:30 e apresenta outro contacto móvel.
+- Não foi encontrada uma conta de Instagram oficial suficientemente inequívoca.
+
+Por existirem divergências, telefone, horário e redes sociais continuam marcados como **por confirmar** no site. A morada deve também receber uma confirmação final da família.

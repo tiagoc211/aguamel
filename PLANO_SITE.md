@@ -46,13 +46,15 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [x] Construir a página responsiva e os movimentos de scroll, com melhoria progressiva e reduced motion.
 - [x] Adicionar SEO local, dados estruturados mínimos, canonical, sitemap, robots, Open Graph e favicon.
 - [x] Garantir contraste, texto alternativo, navegação por teclado e opção de reduzir animações.
+- [x] Atualizar dependências de produção e confirmar auditoria com zero vulnerabilidades conhecidas.
 - [x] Não adicionar analytics nesta fase: o site não instala cookies nem recolhe dados de utilização.
 
 ### 6. Revisão e lançamento
 
 - [x] Testar responsividade entre 320 e 1440 px, navegação interna, scroll e consola num browser Chromium.
 - [ ] Confirmar em dispositivos reais: iPhone/Safari, Android/Chrome e uma ligação móvel lenta.
-- [ ] Validar horários, telefone, mapa, traduções e créditos das imagens/modelo.
+- [x] Inventariar imagens, fontes e licenças; não existe qualquer modelo 3D.
+- [ ] Validar horários, telefone, mapa, traduções e direitos de publicação das imagens.
 - [x] Rever desempenho sem 3D; imagens e partilha social otimizadas. O vídeo final será revisto quando estiver disponível.
 - [ ] Fazer uma revisão final com a família para confirmar a história e os símbolos de Alte.
 - [ ] Publicar, ligar o domínio `aguamel.pt` e confirmar indexação e partilhas sociais.
