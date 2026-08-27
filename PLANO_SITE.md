@@ -51,7 +51,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 - [ ] Testar em iPhone, Android, Safari, Chrome e ligações móveis lentas.
 - [ ] Validar horários, telefone, mapa, traduções e créditos das imagens/modelo.
-- [ ] Rever desempenho: página inicial leve, sem vídeo ou 3D excessivo.
+- [x] Rever desempenho: página inicial leve, sem vídeo ou 3D; imagem social otimizada.
 - [ ] Fazer uma revisão final com a família para confirmar a história e os símbolos de Alte.
 - [ ] Publicar, ligar o domínio `aguamel.pt` e confirmar indexação e partilhas sociais.
 

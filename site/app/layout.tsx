@@ -7,7 +7,7 @@ const localBusinessJsonLd = {
   '@type': 'Bakery',
   name: 'Água Mel',
   url: SITE_URL,
-  image: `${SITE_URL}/og.png`,
+  image: `${SITE_URL}/og.jpg`,
   description: SITE_DESCRIPTION,
   address: {
     '@type': 'PostalAddress',
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     siteName: 'Água Mel',
     type: 'website',
     locale: 'pt_PT',
-    images: [{ url: '/og.png', width: 1792, height: 935, alt: 'Água Mel — Uma casa com história. Sabores com lugar.' }],
+    images: [{ url: '/og.jpg', width: 1200, height: 630, alt: 'Água Mel — Uma casa com história. Sabores com lugar.' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Água Mel',
     description: 'Uma casa com história. Sabores com lugar.',
-    images: ['/og.png'],
+    images: ['/og.jpg'],
   },
 };
 
