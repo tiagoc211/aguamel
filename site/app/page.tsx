@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Queijinhos from "./Queijinhos";
 
 export default function Home() {
   return (
@@ -37,13 +38,14 @@ export default function Home() {
         </div>
 
         <div className="wood-horizon" aria-hidden="true">
-          <div className="hill hill-one" /><div className="hill hill-two" />
-          <div className="hill hill-three" /><div className="hill hill-four" />
-          <div className="village">
-            <i className="house house-one" /><i className="church" />
-            <i className="house house-two" /><i className="mill" />
-            <i className="house house-three" />
-          </div>
+          <Image
+            className="wood-art"
+            src="/images/wood-alte.webp"
+            alt=""
+            width={2090}
+            height={305}
+            sizes="100vw"
+          />
         </div>
 
         <p className="prototype-note">Pastel de nata · fotografia original</p>
@@ -117,38 +119,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flavors" id="sabores" aria-labelledby="flavors-title">
-        <div className="flavors-visual" aria-hidden="true">
-          <div className="flavors-pastry">
-            <Image
-              className="pastry-image"
-              src="/images/pastel-nata-top.webp"
-              alt=""
-              width={1024}
-              height={1024}
-              sizes="(min-width: 760px) 36vw, 300px"
-            />
-          </div>
-          <p>Receituário em preparação</p>
-        </div>
-
-        <div className="flavors-copy">
-          <p className="section-number">03 · Os sabores</p>
-          <h2 id="flavors-title">Do Algarve,<br />à mesa.</h2>
-          <p className="flavors-intro">Este capítulo será construído com a seleção real da casa. Por agora, reunimos as pistas que precisam de ser confirmadas — sem apresentar produtos que ainda não foram escolhidos.</p>
-
-          <ul className="ingredient-list" aria-label="Sabores a confirmar com a Água Mel">
-            <li><span>01</span><strong>Pastel de nata</strong><small>Protagonista</small></li>
-            <li><span>02</span><strong>Amêndoa</strong><small>A confirmar</small></li>
-            <li><span>03</span><strong>Figo</strong><small>A confirmar</small></li>
-            <li><span>04</span><strong>Alfarroba</strong><small>A confirmar</small></li>
-            <li><span>05</span><strong>Mel</strong><small>A confirmar</small></li>
-            <li><span>06</span><strong>Licores locais</strong><small>A confirmar</small></li>
-          </ul>
-
-          <p className="provisional-label">Seleção provisória · validar com a família</p>
-        </div>
-      </section>
+      <Queijinhos />
 
       <section className="visit" id="visitar" aria-labelledby="visit-title">
         <div className="visit-heading">

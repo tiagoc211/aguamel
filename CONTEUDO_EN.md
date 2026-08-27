@@ -35,20 +35,20 @@ The panel and photographs preserve images of Alte. Names, dates and stories will
 - The panel · details to be identified
 - House archive · dates to be confirmed
 
-## 03 · Flavours
+## 03 · The queijinhos
 
-### From the Algarve, to the table.
+### Six small flavours.
 
-This chapter will be built around the house’s real selection. For now, it gathers the leads that still need confirmation, without presenting products that have not yet been chosen.
+The six queijinhos begin together and separate as the page moves, leaving the centre free to introduce each house speciality.
 
-- Pastel de nata · Main feature
-- Almond · To be confirmed
-- Fig · To be confirmed
-- Carob · To be confirmed
-- Honey · To be confirmed
-- Local liqueurs · To be confirmed
+- Coconut
+- Chocolate
+- Walnut
+- Fig
+- Almond
+- Carob
 
-Label: Provisional selection · confirm with the family.
+Label: Queijinho de / Água Mel speciality.
 
 ## 04 · Visit us
 

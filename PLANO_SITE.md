@@ -10,10 +10,10 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 ### 1. História e conteúdo
 
-- [ ] Fotografar a peça de madeira completa, de frente e com boa luz.
+- [x] Preparar e integrar a peça de madeira completa, recortada e otimizada.
 - [ ] Identificar com a família cada edifício e cada fotografia representada.
 - [ ] Reunir uma história curta da casa, especialidades, horário, contactos e localização.
-- [ ] Escolher 6–10 produtos principais: nata, amêndoa, figo, alfarroba, mel e licores locais.
+- [x] Integrar os seis queijinhos fotografados: coco, chocolate, noz, figo, amêndoa e alfarroba.
 - [x] Preparar a tradução-base em inglês. O francês fica fora da primeira versão para manter a revisão simples.
 
 ### 2. Direção visual
@@ -36,12 +36,12 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [ ] **Entrada:** usar o novo vídeo contínuo a entrar pela porta como fundo, mantendo o pastel-sol 2D e o convite “Entre”.
 - [x] **Os quatro cerros:** introdução única para a casa e o lugar, seguida pelo percurso visual dos quatro cerros.
 - [x] **Uma casa com história:** composição visual com a peça de madeira e fotografias antigas; identificação detalhada pendente da família.
-- [x] **Sabores de Alte:** estrutura visual provisória, com seleção de produtos por validar.
+- [x] **Os queijinhos:** fotografia conjunta, separação em scroll e apresentação central dos seis sabores reais.
 - [x] **Visite-nos:** estrutura, morada e mapa; horário, telefone e Instagram por validar.
 
 ### 5. Construção
 
-- [x] Preparar e comprimir as imagens usadas nesta entrega.
+- [x] Preparar e comprimir as imagens usadas nesta entrega, incluindo a peça de madeira e os sete assets dos queijinhos.
 - [ ] Preparar e comprimir o novo vídeo de entrada quando estiver disponível.
 - [x] Construir a página responsiva e os movimentos de scroll, com melhoria progressiva e reduced motion.
 - [x] Adicionar SEO local, dados estruturados mínimos, canonical, sitemap, robots, Open Graph e favicon.

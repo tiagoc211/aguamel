@@ -43,6 +43,16 @@ Ainda precisamos de confirmar com a família:
 
 O site usa apenas este recorte fotográfico 2D. A rotação está ligada ao scroll e não existe qualquer modelo ou efeito 3D.
 
+## Queijinhos — concluído
+
+- [x] Fotografar os seis produtos juntos.
+- [x] Recortar individualmente coco, chocolate, noz, figo, amêndoa e alfarroba.
+- [x] Remover metadados e exportar versões WebP otimizadas.
+- [x] Criar a transição de scroll da fotografia conjunta para três produtos de cada lado.
+- [x] Apresentar cada sabor no espaço central da composição.
+
+Os nomes estão confirmados pelos ficheiros fornecidos. Descrições de ingredientes ou receitas não são publicadas sem validação adicional.
+
 ## Vídeo de entrada — por captar
 
 - [ ] Gravar uma passagem contínua e estável, da rua para o interior da pastelaria.
