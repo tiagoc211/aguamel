@@ -101,7 +101,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 }
 .enter-button:hover, .enter-button:focus-visible { background: var(--wood); transform: translateY(-2px); }
 
-.sun-stage { position: absolute; right: -68px; bottom: 152px; z-index: 2; width: 270px; aspect-ratio: 1; filter: drop-shadow(0 22px 26px rgb(74 45 35 / 18%)); }
+.sun-stage { position: absolute; right: -68px; bottom: 194px; z-index: 2; width: 270px; aspect-ratio: 1; filter: drop-shadow(0 22px 26px rgb(74 45 35 / 18%)); }
 .pastry-sun { width: 100%; height: 100%; }
 .pastry-image { display: block; width: 100%; height: 100%; object-fit: contain; transform-origin: center; }
 .wood-horizon {
@@ -170,8 +170,8 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .memory-image-detail img { object-position: 50% 20%; }
 .memory-image figcaption { padding-top: 12px; border-top: 1px solid rgb(74 45 35 / 30%); color: var(--terracotta); font-size: .56rem; font-weight: 700; letter-spacing: .11em; line-height: 1.45; text-transform: uppercase; }
 
-.cheeses { position: relative; overflow: hidden; background: #12100f; color: var(--chalk); }
-.cheeses-scene { position: relative; height: 100svh; min-height: 700px; overflow: hidden; isolation: isolate; }
+.cheeses { position: relative; height: 140svh; overflow: clip; background: #12100f; color: var(--chalk); }
+.cheeses-scene { position: sticky; top: 0; height: 100svh; min-height: 700px; overflow: hidden; isolation: isolate; }
 .cheeses-scene::before {
   content: '';
   position: absolute;
@@ -286,7 +286,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 }
 
 @media (max-width: 360px) {
-  .sun-stage { right: -80px; bottom: 135px; width: 210px; }
+  .sun-stage { right: -80px; bottom: 175px; width: 210px; }
 }
 
 @media (min-width: 760px) {
@@ -294,7 +294,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .location { grid-column: 2; grid-row: 1; }
   .visit-link { justify-self: end; grid-column: 3; grid-row: 1; }
   .hero-copy { padding: clamp(100px, 18vh, 172px) 7vw 300px; }
-  .sun-stage { right: 8vw; bottom: 140px; width: min(39vw, 530px); }
+  .sun-stage { right: 8vw; bottom: 190px; width: min(39vw, 530px); }
   .wood-horizon { height: 230px; }
   .cerros { padding: 120px 0; }
   .cerros-heading { display: grid; grid-template-columns: 180px minmax(0, 1fr); padding: 0 7vw; }
@@ -329,6 +329,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .visit-card { animation: none !important; }
   .enter-button, .skip-link { transition: none; }
 
+  .cheeses { height: auto; }
   .cheeses-scene { position: relative; height: auto; min-height: 0; padding: 88px 28px 96px; overflow: visible; }
   .cheeses-heading, .cheese-piece { position: relative; inset: auto; opacity: 1 !important; transform: none !important; }
   .cheeses-heading { text-align: left; }
