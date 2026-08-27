@@ -14,7 +14,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [ ] Identificar com a família cada edifício e cada fotografia representada.
 - [ ] Reunir uma história curta da casa, especialidades, horário, contactos e localização.
 - [ ] Escolher 6–10 produtos principais: nata, amêndoa, figo, alfarroba, mel e licores locais.
-- [ ] Preparar textos em português e inglês; decidir se incluímos francês.
+- [x] Preparar a tradução-base em inglês. O francês fica fora da primeira versão para manter a revisão simples.
 
 ### 2. Direção visual
 
@@ -46,11 +46,12 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [x] Construir a página responsiva e os movimentos de scroll, com melhoria progressiva e reduced motion.
 - [x] Adicionar SEO local, dados estruturados mínimos, canonical, sitemap, robots, Open Graph e favicon.
 - [x] Garantir contraste, texto alternativo, navegação por teclado e opção de reduzir animações.
-- [ ] Adicionar analytics apenas se necessário e tratar consentimento/cookies corretamente.
+- [x] Não adicionar analytics nesta fase: o site não instala cookies nem recolhe dados de utilização.
 
 ### 6. Revisão e lançamento
 
-- [ ] Testar em iPhone, Android, Safari, Chrome e ligações móveis lentas.
+- [x] Testar responsividade entre 320 e 1440 px, navegação interna, scroll e consola num browser Chromium.
+- [ ] Confirmar em dispositivos reais: iPhone/Safari, Android/Chrome e uma ligação móvel lenta.
 - [ ] Validar horários, telefone, mapa, traduções e créditos das imagens/modelo.
 - [x] Rever desempenho sem 3D; imagens e partilha social otimizadas. O vídeo final será revisto quando estiver disponível.
 - [ ] Fazer uma revisão final com a família para confirmar a história e os símbolos de Alte.
