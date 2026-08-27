@@ -43,6 +43,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 ### 5. Construção
 
 - [x] Preparar e comprimir os média usados nesta entrega: pastel WebP e dois loops de vídeo leves.
+- [x] Carregar e reproduzir os loops apenas perto da área visível, pausando-os fora do ecrã.
 - [x] Construir a página responsiva e os movimentos de scroll, com melhoria progressiva e reduced motion.
 - [x] Adicionar SEO local, dados estruturados mínimos, canonical, sitemap, robots, Open Graph e favicon.
 - [x] Garantir contraste, texto alternativo, navegação por teclado e opção de reduzir animações.

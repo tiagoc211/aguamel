@@ -11,10 +11,15 @@ export default function AmbientVideo({ src }: AmbientVideoProps) {
 
   useEffect(() => {
     const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const video = videoRef.current;
+    if (!video) return;
+
+    let isNearby = false;
+    let observer: IntersectionObserver | undefined;
+    let animationFrame = 0;
 
     const syncPlayback = () => {
-      const video = videoRef.current;
-      if (!video) return;
+      if (typeof video.play !== "function" || typeof video.pause !== "function") return;
 
       if (motionPreference.matches) {
         video.pause();
@@ -22,13 +27,52 @@ export default function AmbientVideo({ src }: AmbientVideoProps) {
         return;
       }
 
+      if (!isNearby || document.hidden) {
+        video.pause();
+        return;
+      }
+
       void video.play().catch(() => undefined);
     };
 
-    syncPlayback();
-    motionPreference.addEventListener("change", syncPlayback);
+    const updateFallbackProximity = () => {
+      const rect = video.getBoundingClientRect();
+      isNearby = rect.bottom >= -200 && rect.top <= window.innerHeight + 200;
+      syncPlayback();
+    };
 
-    return () => motionPreference.removeEventListener("change", syncPlayback);
+    const scheduleFallbackUpdate = () => {
+      cancelAnimationFrame(animationFrame);
+      animationFrame = requestAnimationFrame(updateFallbackProximity);
+    };
+
+    if (typeof window.IntersectionObserver === "function") {
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          isNearby = entry.isIntersecting;
+          syncPlayback();
+        },
+        { rootMargin: "200px 0px", threshold: 0.01 },
+      );
+
+      observer.observe(video);
+    } else {
+      updateFallbackProximity();
+      window.addEventListener("scroll", scheduleFallbackUpdate, { passive: true });
+      window.addEventListener("resize", scheduleFallbackUpdate);
+    }
+
+    motionPreference.addEventListener("change", syncPlayback);
+    document.addEventListener("visibilitychange", syncPlayback);
+
+    return () => {
+      observer?.disconnect();
+      cancelAnimationFrame(animationFrame);
+      window.removeEventListener("scroll", scheduleFallbackUpdate);
+      window.removeEventListener("resize", scheduleFallbackUpdate);
+      motionPreference.removeEventListener("change", syncPlayback);
+      document.removeEventListener("visibilitychange", syncPlayback);
+    };
   }, []);
 
   return (
@@ -38,7 +82,7 @@ export default function AmbientVideo({ src }: AmbientVideoProps) {
       muted
       loop
       playsInline
-      preload="metadata"
+      preload="none"
       aria-hidden="true"
       tabIndex={-1}
     >
