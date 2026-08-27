@@ -170,8 +170,8 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .memory-image-detail img { object-position: 50% 20%; }
 .memory-image figcaption { padding-top: 12px; border-top: 1px solid rgb(74 45 35 / 30%); color: var(--terracotta); font-size: .56rem; font-weight: 700; letter-spacing: .11em; line-height: 1.45; text-transform: uppercase; }
 
-.cheeses { --cheese-copy: 0; position: relative; height: 620svh; background: #12100f; color: var(--chalk); }
-.cheeses-scene { position: sticky; top: 0; height: 100svh; min-height: 620px; overflow: hidden; isolation: isolate; }
+.cheeses { position: relative; overflow: hidden; background: #12100f; color: var(--chalk); }
+.cheeses-scene { position: relative; height: 100svh; min-height: 700px; overflow: hidden; isolation: isolate; }
 .cheeses-scene::before {
   content: '';
   position: absolute;
@@ -180,7 +180,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   border: 1px solid rgb(243 239 229 / 14%);
   pointer-events: none;
 }
-.cheeses-heading { position: absolute; top: 38px; right: 28px; left: 28px; z-index: 3; text-align: center; will-change: opacity; }
+.cheeses-heading { position: absolute; top: 38px; right: 28px; left: 28px; z-index: 3; text-align: center; }
 .cheeses-heading .section-number { margin-bottom: 10px; color: #d98769; }
 .cheeses-heading h2 { font-size: clamp(2.65rem, 11vw, 5.8rem); line-height: .86; }
 .cheeses-together {
@@ -208,27 +208,28 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   transform: translate(-50%, -50%) scale(.78);
   will-change: opacity, transform;
 }
-.cheese-piece img { display: block; width: 100%; height: 100%; object-fit: contain; opacity: .58; transition: opacity 240ms ease, transform 240ms ease; }
-.cheese-piece.is-featured img { opacity: 1; transform: scale(1.08); }
-.cheeses-copy {
+.cheese-piece img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.cheese-label {
   position: absolute;
   top: 50%;
-  left: 50%;
-  z-index: 3;
-  width: min(48vw, 480px);
-  text-align: center;
-  transform: translate(-50%, -50%);
+  width: 88px;
+  margin: 0;
+  opacity: var(--label-progress, 0);
+  transform: translateY(-50%);
   will-change: opacity;
 }
-.cheeses-kicker { margin: 0 0 12px; color: #d98769; font-size: .6rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
-.cheeses-list { position: relative; height: clamp(88px, 20vw, 160px); margin: 0; padding: 0; list-style: none; }
-.cheeses-list li { position: absolute; inset: 0; display: grid; place-content: center; opacity: 0; transform: translateY(20px); transition: opacity 240ms ease, transform 240ms ease; }
-.cheeses-list li.is-active { opacity: 1; transform: translateY(0); }
-.cheeses-list span { color: rgb(243 239 229 / 46%); font-size: .58rem; letter-spacing: .14em; }
-.cheeses-list strong { display: block; margin-top: 3px; font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2.4rem, 9vw, 6rem); font-weight: 500; letter-spacing: -.055em; line-height: .86; }
-.cheeses-list small { display: block; margin-top: 14px; color: rgb(243 239 229 / 56%); font-size: .52rem; letter-spacing: .12em; text-transform: uppercase; }
-.cheeses-count { margin: 18px auto 0; padding-top: 12px; border-top: 1px solid rgb(243 239 229 / 18%); color: rgb(243 239 229 / 48%); font-size: .55rem; letter-spacing: .14em; }
-
+.cheese-piece:nth-child(odd) .cheese-label { left: calc(100% + 12px); text-align: left; }
+.cheese-piece:nth-child(even) .cheese-label { right: calc(100% + 12px); text-align: right; }
+.cheese-label span { display: block; color: #d98769; font-size: .48rem; font-weight: 700; letter-spacing: .1em; line-height: 1.4; text-transform: uppercase; }
+.cheese-label strong {
+  display: block;
+  margin-top: 3px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.2rem, 4.8vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -.045em;
+  line-height: .95;
+}
 .visit { padding: 88px 28px 28px; background: var(--terracotta); color: var(--chalk); }
 .visit .section-number { color: var(--paper); }
 .visit-heading h2 { max-width: 760px; font-size: clamp(3.2rem, 13vw, 8rem); }
@@ -328,18 +329,11 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .visit-card { animation: none !important; }
   .enter-button, .skip-link { transition: none; }
 
-  .cheeses { height: auto; }
   .cheeses-scene { position: relative; height: auto; min-height: 0; padding: 88px 28px 96px; overflow: visible; }
-  .cheeses-heading, .cheeses-together, .cheese-piece, .cheeses-copy { position: relative; inset: auto; opacity: 1 !important; transform: none !important; }
+  .cheeses-heading, .cheese-piece { position: relative; inset: auto; opacity: 1 !important; transform: none !important; }
   .cheeses-heading { text-align: left; }
-  .cheeses-together { width: min(72vw, 360px); margin: 42px auto 0; }
+  .cheeses-together { display: none; }
   .cheeses-orbit { position: relative; inset: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 48px; }
   .cheese-piece { top: auto; left: auto; width: 100%; max-width: 170px; margin: auto; }
-  .cheese-piece img, .cheese-piece.is-featured img { opacity: 1; transform: none; transition: none; }
-  .cheeses-copy { width: 100%; margin-top: 56px; text-align: left; }
-  .cheeses-kicker, .cheeses-count { display: none; }
-  .cheeses-list { display: grid; height: auto; border-top: 1px solid rgb(243 239 229 / 18%); }
-  .cheeses-list li, .cheeses-list li.is-active { position: static; display: grid; grid-template-columns: 34px minmax(0, 1fr); align-items: baseline; padding: 18px 0; border-bottom: 1px solid rgb(243 239 229 / 18%); opacity: 1; transform: none; }
-  .cheeses-list strong { margin: 0; font-size: 2rem; }
-  .cheeses-list small { grid-column: 2; margin-top: 6px; }
+  .cheese-label, .cheese-piece:nth-child(odd) .cheese-label, .cheese-piece:nth-child(even) .cheese-label { position: static; width: auto; margin-top: 10px; opacity: 1; text-align: center; transform: none; }
 }

@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 const products = [
   { id: 'coco', name: 'Coco', number: '01' },
@@ -16,7 +16,6 @@ const clamp = (value: number) => Math.min(1, Math.max(0, value));
 
 export default function Queijinhos() {
   const sectionRef = useRef<HTMLElement>(null);
-  const [activeProduct, setActiveProduct] = useState(0);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -26,12 +25,11 @@ export default function Queijinhos() {
 
     const update = () => {
       frame = 0;
-      const travel = Math.max(1, section.offsetHeight - window.innerHeight);
-      const progress = clamp(-section.getBoundingClientRect().top / travel);
-      const split = clamp((progress - 0.05) / 0.2);
-      const copy = clamp((progress - 0.22) / 0.1);
-      const productProgress = clamp((progress - 0.27) / 0.65);
-      const nextProduct = Math.min(products.length - 1, Math.floor(productProgress * products.length));
+      const sectionTop = section.getBoundingClientRect().top;
+      const animationStart = window.innerHeight * 0.92;
+      const animationEnd = window.innerHeight * 0.12;
+      const split = clamp((animationStart - sectionTop) / (animationStart - animationEnd));
+      const labelProgress = clamp((split - 0.58) / 0.28);
       const wide = window.innerWidth >= 760;
       const startX = wide ? 92 : 58;
       const startY = wide ? 155 : 112;
@@ -47,19 +45,14 @@ export default function Queijinhos() {
 
         piece.style.opacity = split.toFixed(4);
         piece.style.transform = `translate(-50%, -50%) translate3d(${x.toFixed(2)}px, ${y.toFixed(2)}px, 0) scale(${scale.toFixed(4)})`;
+        piece.style.setProperty('--label-progress', labelProgress.toFixed(4));
       });
 
       const together = section.querySelector<HTMLElement>('.cheeses-together');
-      const heading = section.querySelector<HTMLElement>('.cheeses-heading');
       if (together) {
         together.style.opacity = (1 - split).toFixed(4);
         together.style.transform = `translate(-50%, -50%) scale(${(1 - split * 0.08).toFixed(4)})`;
       }
-      if (heading) heading.style.opacity = (1 - split).toFixed(4);
-
-      section.style.setProperty('--cheese-progress', progress.toFixed(4));
-      section.style.setProperty('--cheese-copy', copy.toFixed(4));
-      setActiveProduct((current) => current === nextProduct ? current : nextProduct);
     };
 
     const requestUpdate = () => {
@@ -96,9 +89,9 @@ export default function Queijinhos() {
           <figcaption>Desça para os descobrir</figcaption>
         </figure>
 
-        <div className="cheeses-orbit" aria-hidden="true">
-          {products.map((product, index) => (
-            <div className={`cheese-piece cheese-${product.id}${index === activeProduct ? ' is-featured' : ''}`} key={product.id}>
+        <div className="cheeses-orbit">
+          {products.map((product) => (
+            <div className={`cheese-piece cheese-${product.id}`} key={product.id}>
               <Image
                 src={`/images/queijinhos/${product.id}.webp`}
                 alt=""
@@ -106,22 +99,12 @@ export default function Queijinhos() {
                 height={640}
                 sizes="(min-width: 760px) 160px, 100px"
               />
+              <p className="cheese-label">
+                <span>{product.number} · Queijinho de</span>
+                <strong>{product.name}</strong>
+              </p>
             </div>
           ))}
-        </div>
-
-        <div className="cheeses-copy" style={{ opacity: 'var(--cheese-copy)' }}>
-          <p className="cheeses-kicker">Queijinho de</p>
-          <ol className="cheeses-list">
-            {products.map((product, index) => (
-              <li className={index === activeProduct ? 'is-active' : ''} key={product.id}>
-                <span>{product.number}</span>
-                <strong>{product.name}</strong>
-                <small>Especialidade da Água Mel</small>
-              </li>
-            ))}
-          </ol>
-          <p className="cheeses-count" aria-hidden="true">{products[activeProduct].number} / 06</p>
         </div>
       </div>
     </section>

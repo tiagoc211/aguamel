@@ -49,7 +49,7 @@ O site usa apenas este recorte fotográfico 2D. A rotação está ligada ao scro
 - [x] Recortar individualmente coco, chocolate, noz, figo, amêndoa e alfarroba.
 - [x] Remover metadados e exportar versões WebP otimizadas.
 - [x] Criar a transição de scroll da fotografia conjunta para três produtos de cada lado.
-- [x] Apresentar cada sabor no espaço central da composição.
+- [x] Mostrar os seis nomes ao mesmo tempo, cada um junto ao respetivo produto.
 
 Os nomes estão confirmados pelos ficheiros fornecidos. Descrições de ingredientes ou receitas não são publicadas sem validação adicional.
 
