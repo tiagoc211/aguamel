@@ -1,6 +1,8 @@
 export default function Home() {
   return (
     <main>
+      <a className="skip-link" href="#historia">Saltar para o conteúdo</a>
+
       <section className="hero" aria-labelledby="hero-title">
         <header className="site-header">
           <a className="brand" href="#top" aria-label="Água Mel — início">Água Mel</a>
@@ -34,9 +36,9 @@ export default function Home() {
         <p className="prototype-note">Silhueta provisória · peça original em preparação</p>
       </section>
 
-      <section className="story-preview" id="historia">
+      <section className="story-preview" id="historia" aria-labelledby="story-title">
         <p className="section-number">01 · A casa</p>
-        <h2>Alte, guardada por quatro cerros.</h2>
+        <h2 id="story-title">Alte, guardada por quatro cerros.</h2>
         <p>Galvana, Francelheira, Castelo e Rocha Maior formam o horizonte da nossa história. Em breve, a peça original em madeira dará forma a este percurso.</p>
       </section>
 
@@ -47,7 +49,7 @@ export default function Home() {
           <p className="cerros-intro">Cada nome será uma entrada para as histórias representadas na peça em madeira. Por agora, deixamos as perguntas certas — sem inventar respostas.</p>
         </div>
 
-        <ol className="cerro-list" aria-label="Os quatro cerros de Alte">
+        <ol className="cerro-list" aria-label="Os quatro cerros de Alte" tabIndex={0}>
           <li className="cerro-card">
             <p className="cerro-number">01</p>
             <h3>Galvana</h3>

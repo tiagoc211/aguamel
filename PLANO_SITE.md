@@ -24,13 +24,11 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [x] Definir sistema tipográfico e assinatura textual; os ícones ficam para depois da fotografia completa da madeira.
 - [x] Aprovar o protótipo mobile-first, porque quase todo o vídeo disponível é vertical.
 
-### 3. Pastel de nata 3D
+### 3. Pastel-sol estático
 
-- [ ] Usar um modelo CC Attribution do Sketchfab apenas no protótipo e guardar a atribuição da licença.
-- [ ] Otimizar para web: GLB, menos polígonos, textura comprimida e versão estática para telemóveis lentos.
+- [x] Manter uma ilustração estática leve, sem viewer 3D nem dependências externas.
 - [ ] Ajustar cor, brilho, zonas caramelizadas e massa folhada para se aproximar do pastel da Água Mel.
-- [ ] Para a versão final ideal, fotografar um pastel real da casa em 30–50 ângulos e criar um scan próprio.
-- [ ] Manter uma imagem WebP de fallback para browsers sem WebGL e para acessibilidade/reduced motion.
+- [ ] Fotografar um pastel real da casa e preparar um recorte WebP/AVIF para avaliar como substituição final.
 
 ### 4. Estrutura da página
 
@@ -45,9 +43,8 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 - [ ] Preparar e comprimir fotografias e vídeos em WebP/AVIF e WebM/MP4.
 - [ ] Construir a página responsiva e os movimentos de scroll.
-- [ ] Integrar o modelo 3D com carregamento progressivo; nunca bloquear o conteúdo principal.
 - [ ] Adicionar SEO local, dados estruturados de negócio, Open Graph e favicon.
-- [ ] Garantir contraste, texto alternativo, navegação por teclado e opção de reduzir animações.
+- [x] Garantir contraste, texto alternativo, navegação por teclado e opção de reduzir animações.
 - [ ] Adicionar analytics apenas se necessário e tratar consentimento/cookies corretamente.
 
 ### 6. Revisão e lançamento
@@ -63,7 +60,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 Um protótipo navegável apenas da página inicial, com:
 
 1. fachada e botão “Entre”;
-2. pastel-sol 3D provisório;
+2. pastel-sol estático;
 3. silhueta dos quatro cerros;
 4. uma secção de história;
 5. uma secção de visita/contactos.
