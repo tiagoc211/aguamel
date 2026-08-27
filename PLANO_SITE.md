@@ -34,7 +34,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 ### 4. Estrutura da página
 
 - [ ] **Entrada:** fachada/porta, pastel-sol e convite “Entre”.
-- [ ] **Os quatro cerros:** percurso animado pela silhueta de Alte.
+- [x] **Os quatro cerros:** introdução única para a casa e o lugar, seguida pelo percurso visual dos quatro cerros.
 - [ ] **Uma casa com história:** madeira e fotografias antigas.
 - [x] **Sabores de Alte:** estrutura visual provisória, com seleção de produtos por validar.
 - [x] **Da porta à varanda:** pequenos loops dos vídeos e destaque para o percurso pela casa.

@@ -48,17 +48,11 @@ export default function Home() {
         <p className="prototype-note">Pastel de nata · fotografia original</p>
       </section>
 
-      <section className="story-preview" id="historia" aria-labelledby="story-title">
-        <p className="section-number">01 · A casa</p>
-        <h2 id="story-title">Alte, guardada por quatro cerros.</h2>
-        <p>Galvana, Francelheira, Castelo e Rocha Maior formam o horizonte da nossa história. Em breve, a peça original em madeira dará forma a este percurso.</p>
-      </section>
-
-      <section className="cerros" aria-labelledby="cerros-title">
+      <section className="cerros" id="historia" aria-labelledby="cerros-title">
         <div className="cerros-heading">
-          <p className="section-number">02 · O lugar</p>
-          <h2 id="cerros-title">Quatro cerros,<br />um lugar.</h2>
-          <p className="cerros-intro">Cada nome será uma entrada para as histórias representadas na peça em madeira. Por agora, deixamos as perguntas certas — sem inventar respostas.</p>
+          <p className="section-number">01 · A casa e o lugar</p>
+          <h2 id="cerros-title">Alte, guardada<br />por quatro cerros.</h2>
+          <p className="cerros-intro">Galvana, Francelheira, Castelo e Rocha Maior formam o horizonte da nossa história. Cada cerro será uma entrada para as memórias representadas na peça em madeira.</p>
         </div>
 
         <ol className="cerro-list" aria-label="Os quatro cerros de Alte" tabIndex={0}>
@@ -104,7 +98,7 @@ export default function Home() {
         </div>
 
         <div className="flavors-copy">
-          <p className="section-number">03 · Os sabores</p>
+          <p className="section-number">02 · Os sabores</p>
           <h2 id="flavors-title">Do Algarve,<br />à mesa.</h2>
           <p className="flavors-intro">Este capítulo será construído com a seleção real da casa. Por agora, reunimos as pistas que precisam de ser confirmadas — sem apresentar produtos que ainda não foram escolhidos.</p>
 
@@ -123,7 +117,7 @@ export default function Home() {
 
       <section className="journey" id="percurso" aria-labelledby="journey-title">
         <div className="journey-heading">
-          <p className="section-number">04 · Da porta à varanda</p>
+          <p className="section-number">03 · Da porta à varanda</p>
           <h2 id="journey-title">Entre devagar.<br />A vista espera.</h2>
           <p className="journey-intro">Da rua para dentro da casa, um percurso breve entre madeira, fotografias e a luz de Alte.</p>
         </div>
@@ -142,7 +136,7 @@ export default function Home() {
 
       <section className="visit" id="visitar" aria-labelledby="visit-title">
         <div className="visit-heading">
-          <p className="section-number">05 · Visite-nos</p>
+          <p className="section-number">04 · Visite-nos</p>
           <h2 id="visit-title">A porta está<br />em Alte.</h2>
           <p>Quando os dados da casa estiverem confirmados, encontrará aqui tudo o que precisa para planear a visita.</p>
         </div>

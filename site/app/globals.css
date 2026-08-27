@@ -126,10 +126,6 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .mill::after { transform: rotate(-45deg); }
 .prototype-note { position: absolute; right: 24px; bottom: 18px; z-index: 4; margin: 0; color: rgb(243 239 229 / 76%); font-size: .55rem; letter-spacing: .11em; text-transform: uppercase; }
 
-.story-preview { display: grid; gap: 24px; padding: 88px 28px; background: var(--paper); }
-.story-preview h2 { max-width: 780px; font-size: clamp(2.65rem, 10vw, 6rem); }
-.story-preview > p:last-child { max-width: 520px; margin: 0; line-height: 1.65; }
-
 .cerros {
   overflow: hidden;
   padding: 88px 0 96px;
@@ -258,8 +254,6 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 
 @supports (animation-timeline: view()) {
   :where(
-    .story-preview h2,
-    .story-preview > p:last-child,
     .cerros-heading h2,
     .cerros-intro,
     .cerro-list,
@@ -294,8 +288,6 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .hero-copy { padding: clamp(100px, 18vh, 172px) 7vw 300px; }
   .sun-stage { right: 8vw; bottom: 140px; width: min(39vw, 530px); }
   .wood-horizon { height: 230px; }
-  .story-preview { grid-template-columns: 180px minmax(0, 1fr); padding: 120px 7vw; }
-  .story-preview > p:last-child { grid-column: 2; }
   .cerros { padding: 120px 0; }
   .cerros-heading { display: grid; grid-template-columns: 180px minmax(0, 1fr); padding: 0 7vw; }
   .cerros-heading h2, .cerros-intro { grid-column: 2; }
@@ -321,8 +313,6 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
   .pastry-image,
-  .story-preview h2,
-  .story-preview > p:last-child,
   .cerros-heading h2,
   .cerros-intro,
   .cerro-list,
