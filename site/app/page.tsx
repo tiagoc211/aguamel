@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main>
@@ -20,7 +22,16 @@ export default function Home() {
         </div>
 
         <div className="sun-stage" aria-hidden="true">
-          <div className="pastry-sun"><div className="pastry-custard" /></div>
+          <div className="pastry-sun">
+            <Image
+              className="pastry-image"
+              src="/images/pastel-nata-top.webp"
+              alt=""
+              width={1024}
+              height={1024}
+              priority
+            />
+          </div>
         </div>
 
         <div className="wood-horizon" aria-hidden="true">
@@ -33,7 +44,7 @@ export default function Home() {
           </div>
         </div>
 
-        <p className="prototype-note">Silhueta provisória · peça original em preparação</p>
+        <p className="prototype-note">Pastel de nata · fotografia original</p>
       </section>
 
       <section className="story-preview" id="historia" aria-labelledby="story-title">
@@ -79,7 +90,15 @@ export default function Home() {
 
       <section className="flavors" id="sabores" aria-labelledby="flavors-title">
         <div className="flavors-visual" aria-hidden="true">
-          <div className="flavors-pastry"><div /></div>
+          <div className="flavors-pastry">
+            <Image
+              className="pastry-image"
+              src="/images/pastel-nata-top.webp"
+              alt=""
+              width={1024}
+              height={1024}
+            />
+          </div>
           <p>Receituário em preparação</p>
         </div>
 
