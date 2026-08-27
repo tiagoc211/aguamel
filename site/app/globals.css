@@ -211,6 +211,17 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .ingredient-list small { color: rgb(74 45 35 / 62%); }
 .provisional-label { margin: 22px 0 0; color: var(--terracotta); font-weight: 700; }
 
+.journey { padding: 88px 28px 96px; background: var(--paper); }
+.journey-heading h2 { max-width: 760px; font-size: clamp(3rem, 12vw, 7.5rem); }
+.journey-intro { max-width: 520px; margin: 28px 0 0; line-height: 1.65; }
+.journey-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 48px; }
+.journey-card { min-width: 0; margin: 0; }
+.journey-card:nth-child(2) { margin-top: 44px; }
+.journey-video { display: block; width: 100%; aspect-ratio: 9 / 16; background: var(--wood); object-fit: cover; }
+.journey-card figcaption { display: grid; gap: 8px; padding-top: 14px; border-top: 1px solid rgb(74 45 35 / 30%); }
+.journey-card figcaption span { color: var(--terracotta); font-size: .56rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.journey-card figcaption strong { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.18rem; font-weight: 600; line-height: 1.15; }
+
 .visit { padding: 88px 28px 28px; background: var(--terracotta); color: var(--chalk); }
 .visit .section-number { color: var(--paper); }
 .visit-heading h2 { max-width: 760px; font-size: clamp(3.2rem, 13vw, 8rem); }
@@ -246,6 +257,8 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
     .flavors-copy h2,
     .flavors-intro,
     .ingredient-list,
+    .journey-heading,
+    .journey-grid,
     .visit-heading,
     .visit-card
   ) {
@@ -283,6 +296,10 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .flavors-visual { min-height: 100%; }
   .flavors-pastry { width: min(36vw, 470px); }
   .flavors-copy { align-self: center; padding: 120px 7vw; }
+  .journey { display: grid; grid-template-columns: minmax(340px, .8fr) minmax(440px, 1.2fr); gap: 7vw; padding: 120px 7vw; }
+  .journey-heading { align-self: center; }
+  .journey-grid { gap: 22px; margin-top: 0; }
+  .journey-card:nth-child(2) { margin-top: 82px; }
   .visit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, 520px); gap: 7vw; padding: 120px 7vw 36px; }
   .visit-heading { display: grid; align-content: start; }
   .visit-card { margin-top: 0; }
@@ -303,6 +320,8 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .flavors-copy h2,
   .flavors-intro,
   .ingredient-list,
+  .journey-heading,
+  .journey-grid,
   .visit-heading,
   .visit-card { animation: none !important; }
   .enter-button, .skip-link { transition: none; }

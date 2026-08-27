@@ -24,11 +24,11 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [x] Definir sistema tipográfico e assinatura textual; os ícones ficam para depois da fotografia completa da madeira.
 - [x] Aprovar o protótipo mobile-first, porque quase todo o vídeo disponível é vertical.
 
-### 3. Pastel-sol estático
+### 3. Pastel-sol 2D
 
-- [x] Manter uma ilustração estática leve, sem viewer 3D nem dependências externas.
-- [ ] Ajustar cor, brilho, zonas caramelizadas e massa folhada para se aproximar do pastel da Água Mel.
-- [ ] Fotografar um pastel real da casa e preparar um recorte WebP/AVIF para avaliar como substituição final.
+- [x] Manter uma imagem 2D leve, sem viewer 3D nem dependências externas.
+- [x] Substituir a ilustração pelo pastel real da Água Mel, preservando cor, zonas caramelizadas e massa folhada.
+- [x] Preparar um recorte WebP transparente e otimizado a partir da fotografia real.
 
 ### 4. Estrutura da página
 
@@ -36,12 +36,12 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [ ] **Os quatro cerros:** percurso animado pela silhueta de Alte.
 - [ ] **Uma casa com história:** madeira e fotografias antigas.
 - [x] **Sabores de Alte:** estrutura visual provisória, com seleção de produtos por validar.
-- [ ] **Da porta à varanda:** pequenos loops dos vídeos e destaque para a vista.
+- [x] **Da porta à varanda:** pequenos loops dos vídeos e destaque para o percurso pela casa.
 - [x] **Visite-nos:** estrutura, morada e mapa; horário, telefone e Instagram por validar.
 
 ### 5. Construção
 
-- [ ] Preparar e comprimir fotografias e vídeos em WebP/AVIF e WebM/MP4.
+- [x] Preparar e comprimir os média usados nesta entrega: pastel WebP e dois loops de vídeo leves.
 - [x] Construir a página responsiva e os movimentos de scroll, com melhoria progressiva e reduced motion.
 - [x] Adicionar SEO local, dados estruturados mínimos, canonical, sitemap, robots, Open Graph e favicon.
 - [x] Garantir contraste, texto alternativo, navegação por teclado e opção de reduzir animações.

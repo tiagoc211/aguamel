@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AmbientVideo from "./AmbientVideo";
 
 export default function Home() {
   return (
@@ -120,9 +121,28 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="journey" id="percurso" aria-labelledby="journey-title">
+        <div className="journey-heading">
+          <p className="section-number">04 · Da porta à varanda</p>
+          <h2 id="journey-title">Entre devagar.<br />A vista espera.</h2>
+          <p className="journey-intro">Da rua para dentro da casa, um percurso breve entre madeira, fotografias e a luz de Alte.</p>
+        </div>
+
+        <div className="journey-grid">
+          <figure className="journey-card">
+            <AmbientVideo src="/video/da-porta.m4v" />
+            <figcaption><span>01 · A porta</span><strong>O primeiro passo para dentro.</strong></figcaption>
+          </figure>
+          <figure className="journey-card">
+            <AmbientVideo src="/video/ate-a-vista.m4v" />
+            <figcaption><span>02 · A casa</span><strong>Memórias, madeira e luz.</strong></figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section className="visit" id="visitar" aria-labelledby="visit-title">
         <div className="visit-heading">
-          <p className="section-number">04 · Visite-nos</p>
+          <p className="section-number">05 · Visite-nos</p>
           <h2 id="visit-title">A porta está<br />em Alte.</h2>
           <p>Quando os dados da casa estiverem confirmados, encontrará aqui tudo o que precisa para planear a visita.</p>
         </div>
