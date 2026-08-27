@@ -245,6 +245,32 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .site-footer a { width: fit-content; margin-top: 10px; }
 
 @keyframes breathe { 0%, 100% { transform: rotate(-7deg) scale(1); } 50% { transform: rotate(-4deg) scale(1.025); } }
+@keyframes reveal-up { from { opacity: 0; transform: translateY(38px); } to { opacity: 1; transform: translateY(0); } }
+
+@supports (animation-timeline: view()) {
+  :where(
+    .story-preview h2,
+    .story-preview > p:last-child,
+    .cerros-heading h2,
+    .cerros-intro,
+    .cerro-list,
+    .flavors-visual,
+    .flavors-copy h2,
+    .flavors-intro,
+    .ingredient-list,
+    .visit-heading,
+    .visit-card
+  ) {
+    animation-name: reveal-up;
+    animation-duration: 1ms;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry 8% cover 30%;
+  }
+
+  .cerro-list, .ingredient-list, .visit-card { animation-range: entry 4% cover 22%; }
+}
 
 @media (max-width: 360px) {
   .sun-stage { right: -80px; bottom: 135px; width: 210px; }
@@ -278,6 +304,18 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .pastry-sun { animation: none; }
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  .pastry-sun,
+  .story-preview h2,
+  .story-preview > p:last-child,
+  .cerros-heading h2,
+  .cerros-intro,
+  .cerro-list,
+  .flavors-visual,
+  .flavors-copy h2,
+  .flavors-intro,
+  .ingredient-list,
+  .visit-heading,
+  .visit-card { animation: none !important; }
   .enter-button, .skip-link { transition: none; }
 }
