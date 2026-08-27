@@ -43,7 +43,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 - [ ] Preparar e comprimir fotografias e vídeos em WebP/AVIF e WebM/MP4.
 - [x] Construir a página responsiva e os movimentos de scroll, com melhoria progressiva e reduced motion.
-- [ ] Adicionar SEO local, dados estruturados de negócio, Open Graph e favicon.
+- [x] Adicionar SEO local, dados estruturados mínimos, canonical, sitemap, robots, Open Graph e favicon.
 - [x] Garantir contraste, texto alternativo, navegação por teclado e opção de reduzir animações.
 - [ ] Adicionar analytics apenas se necessário e tratar consentimento/cookies corretamente.
 
