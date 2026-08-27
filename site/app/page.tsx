@@ -101,8 +101,46 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="visit-preview" id="visitar" aria-label="Visitar Água Mel">
-        <p>Água Mel · Largo José Cavaco Vieira · Alte</p>
+      <section className="visit" id="visitar" aria-labelledby="visit-title">
+        <div className="visit-heading">
+          <p className="section-number">04 · Visite-nos</p>
+          <h2 id="visit-title">A porta está<br />em Alte.</h2>
+          <p>Quando os dados da casa estiverem confirmados, encontrará aqui tudo o que precisa para planear a visita.</p>
+        </div>
+
+        <div className="visit-card">
+          <div className="visit-address">
+            <p className="visit-label">Onde estamos</p>
+            <address>
+              <strong>Água Mel</strong><br />
+              Largo José Cavaco Vieira<br />
+              Alte · Algarve
+            </address>
+            <a
+              className="map-link"
+              href="https://www.google.com/maps/search/?api=1&amp;query=%C3%81gua%20Mel%20Largo%20Jos%C3%A9%20Cavaco%20Vieira%20Alte"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Abrir a localização da Água Mel no mapa, numa nova janela"
+            >
+              <span>Abrir no mapa</span><span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <dl className="visit-details">
+            <div><dt>Horário</dt><dd>Por confirmar</dd></div>
+            <div><dt>Telefone</dt><dd>Por confirmar</dd></div>
+            <div><dt>Instagram</dt><dd>Por confirmar</dd></div>
+          </dl>
+
+          <p className="visit-warning">Validar estes dados com a família antes da publicação.</p>
+        </div>
+
+        <footer className="site-footer">
+          <p>Água Mel · Alte</p>
+          <p>Uma casa com história. Sabores com lugar.</p>
+          <a href="#top">Voltar ao início ↑</a>
+        </footer>
       </section>
     </main>
   );

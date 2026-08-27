@@ -37,7 +37,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [ ] **Uma casa com história:** madeira e fotografias antigas.
 - [x] **Sabores de Alte:** estrutura visual provisória, com seleção de produtos por validar.
 - [ ] **Da porta à varanda:** pequenos loops dos vídeos e destaque para a vista.
-- [ ] **Visite-nos:** mapa, horário, telefone, Instagram e indicações práticas.
+- [x] **Visite-nos:** estrutura, morada e mapa; horário, telefone e Instagram por validar.
 
 ### 5. Construção
 
