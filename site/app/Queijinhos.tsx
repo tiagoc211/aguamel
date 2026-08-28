@@ -29,6 +29,7 @@ export default function Queijinhos() {
       const animationDistance = Math.max(window.innerHeight * 0.5, 360);
       const split = clamp(-sectionTop / animationDistance);
       const labelProgress = clamp((split - 0.58) / 0.28);
+      const centerProgress = clamp((split - 0.24) / 0.28);
       const wide = window.innerWidth >= 760;
       const startX = wide ? 92 : 58;
       const startY = wide ? 155 : 112;
@@ -49,14 +50,14 @@ export default function Queijinhos() {
 
       const together = section.querySelector<HTMLElement>('.cheeses-together');
       if (together) {
-        together.style.opacity = (1 - split).toFixed(4);
+        together.style.opacity = (1 - clamp(split / 0.44)).toFixed(4);
         together.style.transform = `translate(-50%, -50%) scale(${(1 - split * 0.08).toFixed(4)})`;
       }
 
       const center = section.querySelector<HTMLElement>('.cheeses-center');
       if (center) {
-        center.style.opacity = labelProgress.toFixed(4);
-        center.style.transform = `translate(-50%, -50%) scaleX(${(0.72 + labelProgress * 0.28).toFixed(4)}) scaleY(${(0.9 + labelProgress * 0.1).toFixed(4)})`;
+        center.style.opacity = centerProgress.toFixed(4);
+        center.style.transform = `translate(-50%, -50%) scaleX(${(0.72 + centerProgress * 0.28).toFixed(4)}) scaleY(${(0.9 + centerProgress * 0.1).toFixed(4)})`;
       }
     };
 

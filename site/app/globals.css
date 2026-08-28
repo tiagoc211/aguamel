@@ -235,7 +235,10 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   padding: 22px 18px;
   border: 2px solid rgb(53 92 76 / 84%);
   border-radius: 48% 48% 18px 18px / 32% 32% 16px 16px;
-  background: radial-gradient(circle at 50% 48%, rgb(53 92 76 / 18%), rgb(13 13 13 / 0) 68%);
+  background:
+    radial-gradient(circle at 50% 48%, rgb(255 255 255 / 48%), transparent 56%),
+    linear-gradient(145deg, #f4eee1, #dcd1bd);
+  box-shadow: 0 24px 70px rgb(0 0 0 / 42%);
   opacity: 0;
   text-align: center;
   transform: translate(-50%, -50%) scaleX(.72) scaleY(.9);
@@ -257,7 +260,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   z-index: 0;
   display: grid;
   place-items: center;
-  color: rgb(243 239 229 / 4%);
+  color: rgb(216 135 105 / 10%);
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 8.5rem;
   font-weight: 600;
@@ -266,9 +269,10 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   transform: translateX(-.05em);
 }
 .cheeses-center > * { position: relative; z-index: 1; }
-.cheeses-center span { margin: 0; color: #d98769; font-size: .44rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.cheeses-center span { margin: 0; color: #a9533d; font-size: .44rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
 .cheeses-center strong {
   margin: 8px 0 4px;
+  color: #263c32;
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: clamp(2.05rem, 8.5vw, 3rem);
   font-weight: 500;
@@ -277,12 +281,12 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 }
 .cheeses-center p {
   margin: 0;
-  color: rgb(243 239 229 / 82%);
+  color: #4a2d23;
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: .9rem;
   line-height: 1.05;
 }
-.cheeses-center .cheeses-center-note { margin-top: 10px; color: rgb(243 239 229 / 52%); font-size: .38rem; }
+.cheeses-center .cheeses-center-note { margin-top: 10px; color: rgb(38 60 50 / 72%); font-size: .38rem; }
 .cheeses-orbit { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
 .cheese-piece {
   position: absolute;
