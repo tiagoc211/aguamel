@@ -112,7 +112,6 @@ a:focus-visible, .cerro-list:focus-visible { outline: 3px solid var(--honey); ou
       linear-gradient(180deg, var(--chalk) 0 34%, rgb(243 239 229 / 88%) 41%, rgb(243 239 229 / 28%) 56%, transparent 72%),
       linear-gradient(90deg, rgb(243 239 229 / 44%), transparent 82%);
   }
-  .hero-video { object-position: 54% center; }
 }
 
 .site-header {
