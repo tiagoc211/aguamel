@@ -42,7 +42,6 @@ export default function Home() {
           />
         </div>
 
-        <p className="prototype-note">Arquivo da casa · ilustração a partir da fotografia original</p>
       </section>
 
       <section className="cerros" id="historia" aria-labelledby="cerros-title">
@@ -61,33 +60,25 @@ export default function Home() {
               />
             </div>
           </div>
-          <p className="cerros-intro">Galvana, Francelheira, Castelo e Rocha Maior formam o horizonte da nossa história. Cada cerro será uma entrada para as memórias representadas na peça em madeira.</p>
+          <p className="cerros-intro">Galvana, Francelheira, Castelo e Rocha Maior formam o horizonte da nossa história.</p>
         </div>
 
         <ol className="cerro-list" aria-label="Os quatro cerros de Alte" tabIndex={0}>
           <li className="cerro-card">
             <p className="cerro-number">01</p>
             <h3>Galvana</h3>
-            <p>Que lugar ocupa este cerro na peça?</p>
-            <span>História por confirmar</span>
           </li>
           <li className="cerro-card">
             <p className="cerro-number">02</p>
             <h3>Francelheira</h3>
-            <p>Que histórias e caminhos lhe estão ligados?</p>
-            <span>História por confirmar</span>
           </li>
           <li className="cerro-card">
             <p className="cerro-number">03</p>
             <h3>Castelo</h3>
-            <p>Que referências da aldeia aparecem deste lado?</p>
-            <span>História por confirmar</span>
           </li>
           <li className="cerro-card">
             <p className="cerro-number">04</p>
             <h3>Rocha Maior</h3>
-            <p>Que memória fecha o horizonte de Alte?</p>
-            <span>História por confirmar</span>
           </li>
         </ol>
       </section>
@@ -96,7 +87,7 @@ export default function Home() {
         <div className="memories-copy">
           <p className="section-number">02 · Memórias</p>
           <h2 id="memories-title">Madeira, retratos,<br />lugares.</h2>
-          <p>A peça e as fotografias guardam imagens de Alte. Os nomes, as datas e as histórias serão acrescentados depois de confirmados com a família.</p>
+          <p>A peça e as fotografias guardam imagens de Alte e memórias da casa.</p>
         </div>
 
         <div className="memories-gallery">
@@ -109,7 +100,7 @@ export default function Home() {
                 height={1778}
               />
             </div>
-            <figcaption>A peça · detalhes por identificar</figcaption>
+            <figcaption>A peça em madeira</figcaption>
           </figure>
           <figure className="memory-image memory-image-detail">
             <div className="memory-frame">
@@ -120,7 +111,7 @@ export default function Home() {
                 height={1778}
               />
             </div>
-            <figcaption>Arquivo da casa · datas por confirmar</figcaption>
+            <figcaption>Retratos de Alte</figcaption>
           </figure>
         </div>
       </section>
@@ -131,7 +122,7 @@ export default function Home() {
         <div className="visit-heading">
           <p className="section-number">04 · Visite-nos</p>
           <h2 id="visit-title">A porta está<br />em Alte.</h2>
-          <p>Quando os dados da casa estiverem confirmados, encontrará aqui tudo o que precisa para planear a visita.</p>
+          <p>Encontre-nos no Largo José Cavaco Vieira, no coração de Alte.</p>
         </div>
 
         <div className="visit-card">
@@ -154,8 +145,6 @@ export default function Home() {
           </div>
 
           <dl className="visit-details">
-            <div><dt>Horário</dt><dd>Por confirmar</dd></div>
-            <div><dt>Telefone</dt><dd>Por confirmar</dd></div>
             <div>
               <dt>Instagram</dt>
               <dd>
@@ -165,8 +154,6 @@ export default function Home() {
               </dd>
             </div>
           </dl>
-
-          <p className="visit-warning">Validar estes dados com a família antes da publicação.</p>
         </div>
 
         <footer className="site-footer">

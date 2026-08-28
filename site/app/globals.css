@@ -125,7 +125,6 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   position: absolute; right: 0; bottom: 0; left: 0; z-index: 3; height: 210px; overflow: hidden;
 }
 .wood-art { position: absolute; bottom: -1px; left: 50%; display: block; width: max(960px, 100vw); max-width: none; height: auto; transform: translateX(-50%); }
-.prototype-note { position: absolute; right: 24px; bottom: 18px; z-index: 4; margin: 0; color: rgb(243 239 229 / 76%); font-size: .55rem; letter-spacing: .11em; text-transform: uppercase; }
 
 .cerros {
   overflow: hidden;
@@ -175,7 +174,6 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .cerro-number { margin: 0; color: #d98769; font-size: .68rem; letter-spacing: .16em; }
 .cerro-card h3 { position: relative; z-index: 1; margin: 76px 0 18px; font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2.1rem, 9vw, 3rem); font-weight: 500; letter-spacing: -.045em; }
 .cerro-card > p:not(.cerro-number) { position: relative; z-index: 1; max-width: 230px; margin: 0; color: rgb(243 239 229 / 76%); line-height: 1.5; }
-.cerro-card span { position: absolute; bottom: 22px; left: 24px; z-index: 1; color: rgb(243 239 229 / 72%); font-size: .58rem; letter-spacing: .12em; text-transform: uppercase; }
 
 .memories { padding: 88px 28px 96px; background: var(--paper); }
 .memories-copy h2 { max-width: 760px; font-size: clamp(3rem, 12vw, 7.5rem); }
@@ -289,7 +287,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .visit-heading > p:last-child { max-width: 520px; margin: 28px 0 0; color: rgb(243 239 229 / 78%); line-height: 1.65; }
 .visit-card { margin-top: 56px; border: 1px solid rgb(243 239 229 / 34%); }
 .visit-address { padding: 28px; }
-.visit-label, .visit-details dt, .visit-warning, .site-footer { font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; }
+.visit-label, .visit-details dt, .site-footer { font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; }
 .visit-label { margin: 0 0 22px; color: rgb(243 239 229 / 66%); }
 .visit-address address { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.7rem, 7vw, 2.6rem); font-style: normal; line-height: 1.25; }
 .visit-address address strong { font-weight: 600; }
@@ -300,7 +298,6 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .visit-details dt { color: rgb(243 239 229 / 68%); }
 .visit-details dd { margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.05rem; }
 .visit-details a { padding-bottom: 2px; border-bottom: 1px solid rgb(243 239 229 / 52%); }
-.visit-warning { margin: 0; padding: 20px 28px; color: #ffe1a0; line-height: 1.5; }
 .site-footer { display: grid; gap: 10px; margin-top: 72px; padding-top: 24px; border-top: 1px solid rgb(243 239 229 / 40%); color: rgb(243 239 229 / 76%); }
 .site-footer p { margin: 0; }
 .site-footer a { width: fit-content; margin-top: 10px; }
