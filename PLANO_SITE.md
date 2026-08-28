@@ -34,10 +34,10 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 ### 4. Estrutura da página
 
 - [x] **Entrada:** a fotografia real da paisagem de Alte cria um fundo calmo para o hero e para o convite “Entre”.
-- [x] **Os quatro cerros:** introdução única para a casa e o lugar, com o pastel-sol em grande junto ao título, seguida pelo percurso visual dos quatro cerros.
+- [x] **Os quatro cerros:** introdução única para a casa e o lugar, seguida pelo percurso visual dos quatro cerros.
 - [x] **Uma casa com história:** composição visual com a peça de madeira e fotografias antigas; identificação detalhada pendente da família.
 - [x] **Os queijinhos:** fotografia conjunta; a separação começa apenas quando a secção ocupa todo o ecrã e termina com os seis nomes ligados por setas à fotografia, que permanece translúcida no centro.
-- [x] **Pastel de amêndoa:** recorte real com fundo transparente, apresentado à escala do pastel de nata e com rotação ligada ao scroll.
+- [x] **Pastéis da casa:** pastel de nata à esquerda e mais acima, pastel de amêndoa à direita e mais abaixo, ambos grandes e com rotação ligada ao scroll.
 - [x] **Visite-nos:** morada, mapa, Instagram e horário das 09:00 às 17:00; sem telefone por opção da casa.
 
 ### 5. Construção
@@ -65,10 +65,10 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 Um protótipo navegável apenas da página inicial, com:
 
 1. hero com a paisagem de Alte e botão “Entre”;
-2. pastel-sol 2D com rotação ligada ao scroll;
+2. os dois pastéis 2D com rotação ligada ao scroll;
 3. silhueta dos quatro cerros;
 4. uma secção de história;
-5. pastel de amêndoa recortado com movimento ligado ao scroll;
+5. pastel de nata e pastel de amêndoa juntos, com movimento ligado ao scroll;
 6. uma secção de visita/contactos.
 
 Depois de aprovada esta experiência, avançamos para conteúdo completo, traduções e acabamento.

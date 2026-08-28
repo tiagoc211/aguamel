@@ -47,19 +47,7 @@ export default function Home() {
       <section className="cerros" id="historia" aria-labelledby="cerros-title">
         <div className="cerros-heading">
           <p className="section-number">01 · A casa e o lugar</p>
-          <div className="cerros-title-row">
-            <h2 id="cerros-title">Alte, guardada<br />por quatro cerros.</h2>
-            <div className="cerros-pastry" aria-hidden="true">
-              <Image
-                className="pastry-image"
-                src="/images/pastel-nata-top.webp"
-                alt=""
-                width={1024}
-                height={1024}
-                sizes="(min-width: 760px) 28vw, 210px"
-              />
-            </div>
-          </div>
+          <h2 id="cerros-title">Alte, guardada<br />por quatro cerros.</h2>
           <p className="cerros-intro">Galvana, Francelheira, Castelo e Rocha Maior formam o horizonte da nossa história.</p>
         </div>
 
@@ -118,22 +106,37 @@ export default function Home() {
 
       <Queijinhos />
 
-      <section className="almond-feature" aria-labelledby="almond-title">
-        <div className="almond-copy">
+      <section className="pastries-feature" aria-labelledby="pastries-title">
+        <div className="pastries-copy">
           <p className="section-number">Da nossa montra</p>
-          <h2 id="almond-title">Pastel de<br />amêndoa.</h2>
-          <p>Visto de cima, como um segundo sol da casa.</p>
+          <h2 id="pastries-title">Dois pastéis.<br />Dois sóis.</h2>
+          <p>O pastel de nata e o pastel de amêndoa, feitos na Água Mel.</p>
         </div>
 
-        <div className="almond-pastry">
-          <Image
-            className="pastry-image"
-            src="/images/pastel-amendoa-top.webp"
-            alt="Pastel de amêndoa da Água Mel visto de cima"
-            width={1024}
-            height={1024}
-            sizes="(min-width: 760px) 28vw, 210px"
-          />
+        <div className="pastries-pair">
+          <figure className="pastry-display pastry-display-nata">
+            <Image
+              className="pastry-image"
+              src="/images/pastel-nata-top.webp"
+              alt="Pastel de nata da Água Mel visto de cima"
+              width={1024}
+              height={1024}
+              sizes="(min-width: 760px) 28vw, 210px"
+            />
+            <figcaption>Pastel de nata</figcaption>
+          </figure>
+
+          <figure className="pastry-display pastry-display-almond">
+            <Image
+              className="pastry-image"
+              src="/images/pastel-amendoa-top.webp"
+              alt="Pastel de amêndoa da Água Mel visto de cima"
+              width={1024}
+              height={1024}
+              sizes="(min-width: 760px) 28vw, 210px"
+            />
+            <figcaption>Pastel de amêndoa</figcaption>
+          </figure>
         </div>
       </section>
 
