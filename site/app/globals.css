@@ -189,7 +189,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .memory-image-detail img { object-position: 50% 20%; }
 .memory-image figcaption { padding-top: 12px; border-top: 1px solid rgb(74 45 35 / 30%); color: var(--terracotta); font-size: .56rem; font-weight: 700; letter-spacing: .11em; line-height: 1.45; text-transform: uppercase; }
 
-.cheeses { position: relative; height: 180svh; overflow: clip; background: #12100f; color: var(--chalk); }
+.cheeses { position: relative; height: 180svh; overflow: clip; background: #0d0d0d; color: var(--chalk); }
 .cheeses-scene { position: sticky; top: 0; height: 100svh; min-height: 700px; overflow: hidden; isolation: isolate; }
 .cheeses-scene::before {
   content: '';
@@ -214,7 +214,13 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   transform-origin: center;
   will-change: opacity, transform;
 }
-.cheeses-together img { display: block; width: 100%; height: auto; }
+.cheeses-together img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-mask-image: radial-gradient(ellipse 50% 50% at center, #000 78%, transparent 100%);
+  mask-image: radial-gradient(ellipse 50% 50% at center, #000 78%, transparent 100%);
+}
 .cheeses-together figcaption { margin-top: 14px; color: rgb(243 239 229 / 58%); font-size: .56rem; letter-spacing: .14em; text-align: center; text-transform: uppercase; }
 .cheeses-center {
   position: absolute;
