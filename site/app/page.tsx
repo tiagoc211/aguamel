@@ -145,6 +145,7 @@ export default function Home() {
           </div>
 
           <dl className="visit-details">
+            <div><dt>Horário</dt><dd>09:00–17:00</dd></div>
             <div>
               <dt>Instagram</dt>
               <dd>
