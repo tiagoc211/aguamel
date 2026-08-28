@@ -376,6 +376,12 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
       linear-gradient(90deg, rgb(243 239 229 / 96%) 0 14%, rgb(243 239 229 / 84%) 31%, rgb(243 239 229 / 22%) 56%, transparent 74%),
       linear-gradient(180deg, rgb(243 239 229 / 30%), transparent 48%, rgb(13 13 13 / 14%));
   }
+  .hero-video {
+    left: auto;
+    width: 78%;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 22%);
+    mask-image: linear-gradient(90deg, transparent, #000 22%);
+  }
   .hero-video-control { right: 52px; bottom: 268px; }
   .sun-stage { bottom: 210px; left: 34%; width: min(20vw, 260px); }
   .wood-horizon { height: 230px; }
