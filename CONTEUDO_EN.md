@@ -63,7 +63,7 @@ Once the house details have been confirmed, everything needed to plan a visit wi
 - Open in maps
 - Opening hours · To be confirmed
 - Telephone · To be confirmed
-- Instagram · To be confirmed
+- Instagram · @agua_mel97
 
 Notice: Confirm these details with the family before publication.
 

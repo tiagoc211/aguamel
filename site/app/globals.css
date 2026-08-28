@@ -50,19 +50,38 @@ a:focus-visible, .cerro-list:focus-visible { outline: 3px solid var(--honey); ou
   min-height: 100svh;
   overflow: hidden;
   position: relative;
-  background:
-    linear-gradient(90deg, var(--terracotta) 0 8px, transparent 8px calc(100% - 8px), var(--terracotta) calc(100% - 8px)),
-    radial-gradient(circle at 76% 18%, rgb(214 154 45 / 12%), transparent 31%),
-    var(--chalk);
+  background: var(--chalk);
 }
 
 .hero::before {
   content: '';
   position: absolute;
   inset: 16px;
-  z-index: -1;
+  z-index: 6;
   border: 1px solid rgb(165 78 53 / 55%);
   pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(180deg, rgb(243 239 229 / 98%) 0 34%, rgb(243 239 229 / 74%) 46%, rgb(243 239 229 / 12%) 70%),
+    linear-gradient(90deg, rgb(243 239 229 / 52%), transparent 76%);
+  pointer-events: none;
+}
+
+.hero-background { position: absolute; inset: 0; z-index: -1; object-fit: cover; object-position: 69% center; }
+
+@media (max-width: 759px) {
+  .hero::after {
+    background:
+      linear-gradient(180deg, var(--chalk) 0 34%, rgb(243 239 229 / 88%) 41%, rgb(243 239 229 / 28%) 56%, transparent 72%),
+      linear-gradient(90deg, rgb(243 239 229 / 44%), transparent 82%);
+  }
+  .hero-background { top: 330px !important; bottom: auto !important; height: calc(100% - 330px) !important; object-position: 64% center; }
 }
 
 .site-header {
@@ -101,7 +120,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 }
 .enter-button:hover, .enter-button:focus-visible { background: var(--wood); transform: translateY(-2px); }
 
-.sun-stage { position: absolute; right: -68px; bottom: 194px; z-index: 2; width: 270px; aspect-ratio: 1; filter: drop-shadow(0 22px 26px rgb(74 45 35 / 18%)); }
+.sun-stage { position: absolute; bottom: 188px; left: -24px; z-index: 2; width: 122px; aspect-ratio: 1; filter: drop-shadow(0 22px 26px rgb(74 45 35 / 18%)); }
 .pastry-sun { width: 100%; height: 100%; }
 .pastry-image { display: block; width: 100%; height: 100%; object-fit: contain; transform-origin: center; }
 .wood-horizon {
@@ -246,6 +265,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .visit-details div { display: grid; grid-template-columns: 1fr auto; gap: 20px; padding: 20px 28px; border-bottom: 1px solid rgb(243 239 229 / 34%); }
 .visit-details dt { color: rgb(243 239 229 / 68%); }
 .visit-details dd { margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.05rem; }
+.visit-details a { padding-bottom: 2px; border-bottom: 1px solid rgb(243 239 229 / 52%); }
 .visit-warning { margin: 0; padding: 20px 28px; color: #ffe1a0; line-height: 1.5; }
 .site-footer { display: grid; gap: 10px; margin-top: 72px; padding-top: 24px; border-top: 1px solid rgb(243 239 229 / 40%); color: rgb(243 239 229 / 76%); }
 .site-footer p { margin: 0; }
@@ -286,7 +306,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 }
 
 @media (max-width: 360px) {
-  .sun-stage { right: -80px; bottom: 175px; width: 210px; }
+  .sun-stage { bottom: 176px; left: -28px; width: 110px; }
 }
 
 @media (min-width: 760px) {
@@ -294,7 +314,9 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .location { grid-column: 2; grid-row: 1; }
   .visit-link { justify-self: end; grid-column: 3; grid-row: 1; }
   .hero-copy { padding: clamp(100px, 18vh, 172px) 7vw 300px; }
-  .sun-stage { right: 8vw; bottom: 190px; width: min(39vw, 530px); }
+  .hero::after { background: linear-gradient(90deg, rgb(243 239 229 / 96%) 0 13%, rgb(243 239 229 / 82%) 30%, rgb(243 239 229 / 18%) 56%, transparent 74%); }
+  .hero-background { object-position: center; }
+  .sun-stage { bottom: 184px; left: 43%; width: min(14vw, 180px); }
   .wood-horizon { height: 230px; }
   .cerros { padding: 120px 0; }
   .cerros-heading { display: grid; grid-template-columns: 180px minmax(0, 1fr); padding: 0 7vw; }

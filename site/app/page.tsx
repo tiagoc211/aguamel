@@ -7,6 +7,15 @@ export default function Home() {
       <a className="skip-link" href="#historia">Saltar para o conteúdo</a>
 
       <section className="hero" aria-labelledby="hero-title">
+        <Image
+          className="hero-background"
+          src="/images/hero-family-illustrated.webp"
+          alt="A família Água Mel à porta da pastelaria, numa ilustração baseada numa fotografia antiga"
+          fill
+          priority
+          sizes="100vw"
+        />
+
         <header className="site-header">
           <a className="brand" href="#top" aria-label="Água Mel — início">Água Mel</a>
           <p className="location">Alte · Algarve</p>
@@ -14,7 +23,7 @@ export default function Home() {
         </header>
 
         <div className="hero-copy" id="top">
-          <p className="eyebrow">Doçaria tradicional · desde Alte</p>
+          <p className="eyebrow">Doçaria tradicional · desde 1997</p>
           <h1 id="hero-title">Uma casa<br />com história.</h1>
           <p className="intro">Sabores com lugar, feitos entre os quatro cerros que guardam a aldeia.</p>
           <a className="enter-button" href="#historia">
@@ -48,7 +57,7 @@ export default function Home() {
           />
         </div>
 
-        <p className="prototype-note">Pastel de nata · fotografia original</p>
+        <p className="prototype-note">Arquivo da casa · ilustração a partir da fotografia original</p>
       </section>
 
       <section className="cerros" id="historia" aria-labelledby="cerros-title">
@@ -150,7 +159,14 @@ export default function Home() {
           <dl className="visit-details">
             <div><dt>Horário</dt><dd>Por confirmar</dd></div>
             <div><dt>Telefone</dt><dd>Por confirmar</dd></div>
-            <div><dt>Instagram</dt><dd>Por confirmar</dd></div>
+            <div>
+              <dt>Instagram</dt>
+              <dd>
+                <a href="https://www.instagram.com/agua_mel97/" target="_blank" rel="noreferrer">
+                  @agua_mel97 <span aria-hidden="true">↗</span>
+                </a>
+              </dd>
+            </div>
           </dl>
 
           <p className="visit-warning">Validar estes dados com a família antes da publicação.</p>
