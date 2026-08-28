@@ -29,7 +29,7 @@ export default function Queijinhos() {
       const animationDistance = Math.max(window.innerHeight * 0.5, 360);
       const split = clamp(-sectionTop / animationDistance);
       const labelProgress = clamp((split - 0.58) / 0.28);
-      const centerProgress = clamp((split - 0.24) / 0.28);
+      const arrowProgress = clamp((split - 0.3) / 0.42);
       const wide = window.innerWidth >= 760;
       const startX = wide ? 92 : 58;
       const startY = wide ? 155 : 112;
@@ -50,14 +50,17 @@ export default function Queijinhos() {
 
       const together = section.querySelector<HTMLElement>('.cheeses-together');
       if (together) {
-        together.style.opacity = (1 - clamp(split / 0.44)).toFixed(4);
-        together.style.transform = `translate(-50%, -50%) scale(${(1 - split * 0.08).toFixed(4)})`;
+        together.style.opacity = (1 - split * 0.74).toFixed(4);
+        together.style.transform = `translate(-50%, -50%) scale(${(1 - split * 0.38).toFixed(4)})`;
+        together.style.setProperty('--caption-opacity', (1 - split).toFixed(4));
       }
 
-      const center = section.querySelector<HTMLElement>('.cheeses-center');
-      if (center) {
-        center.style.opacity = centerProgress.toFixed(4);
-        center.style.transform = `translate(-50%, -50%) scaleX(${(0.72 + centerProgress * 0.28).toFixed(4)}) scaleY(${(0.9 + centerProgress * 0.1).toFixed(4)})`;
+      const arrows = section.querySelector<SVGElement>('.cheeses-arrows');
+      if (arrows) {
+        arrows.style.opacity = arrowProgress.toFixed(4);
+        arrows.querySelectorAll<SVGPathElement>(':scope > path').forEach((path) => {
+          path.style.strokeDashoffset = (1 - arrowProgress).toFixed(4);
+        });
       }
     };
 
@@ -95,12 +98,19 @@ export default function Queijinhos() {
           <figcaption>Desça para os descobrir</figcaption>
         </figure>
 
-        <div className="cheeses-center">
-          <span className="cheeses-center-kicker">Pastelaria · Alte</span>
-          <strong>Água Mel</strong>
-          <p>A adoçar momentos<br />desde 1997.</p>
-          <span className="cheeses-center-note">Doçaria tradicional</span>
-        </div>
+        <svg className="cheeses-arrows" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <marker id="cheese-arrowhead" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+              <path d="M 0 0 L 8 4 L 0 8" />
+            </marker>
+          </defs>
+          <path pathLength="1" d="M 43 44 C 37 40, 31 32, 25 27" />
+          <path pathLength="1" d="M 57 44 C 63 40, 69 32, 75 27" />
+          <path pathLength="1" d="M 40 52 C 35 52, 30 52, 25 52" />
+          <path pathLength="1" d="M 60 52 C 65 52, 70 52, 75 52" />
+          <path pathLength="1" d="M 43 60 C 37 64, 31 72, 25 77" />
+          <path pathLength="1" d="M 57 60 C 63 64, 69 72, 75 77" />
+        </svg>
 
         <div className="cheeses-orbit">
           {products.map((product) => (

@@ -221,72 +221,35 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   -webkit-mask-image: radial-gradient(ellipse 50% 50% at center, #000 78%, transparent 100%);
   mask-image: radial-gradient(ellipse 50% 50% at center, #000 78%, transparent 100%);
 }
-.cheeses-together figcaption { margin-top: 14px; color: rgb(243 239 229 / 58%); font-size: .56rem; letter-spacing: .14em; text-align: center; text-transform: uppercase; }
-.cheeses-center {
-  position: absolute;
-  top: 42%;
-  left: 50%;
-  z-index: 1;
-  display: grid;
-  width: min(54vw, 210px);
-  min-height: 150px;
-  place-content: center;
-  overflow: hidden;
-  padding: 22px 18px;
-  border: 2px solid rgb(53 92 76 / 84%);
-  border-radius: 48% 48% 18px 18px / 32% 32% 16px 16px;
-  background:
-    radial-gradient(circle at 50% 48%, rgb(255 255 255 / 48%), transparent 56%),
-    linear-gradient(145deg, #f4eee1, #dcd1bd);
-  box-shadow: 0 24px 70px rgb(0 0 0 / 42%);
-  opacity: 0;
+.cheeses-together figcaption {
+  margin-top: 14px;
+  color: rgb(243 239 229 / 58%);
+  font-size: .56rem;
+  letter-spacing: .14em;
+  opacity: var(--caption-opacity, 1);
   text-align: center;
-  transform: translate(-50%, -50%) scaleX(.72) scaleY(.9);
-  will-change: opacity, transform;
+  text-transform: uppercase;
 }
-.cheeses-center::before {
-  content: '';
-  position: absolute;
-  inset: 7px;
-  z-index: 2;
-  border: 1px solid rgb(216 135 105 / 52%);
-  border-radius: inherit;
-  pointer-events: none;
-}
-.cheeses-center::after {
-  content: '97';
+.cheeses-arrows {
   position: absolute;
   inset: 0;
-  z-index: 0;
-  display: grid;
-  place-items: center;
-  color: rgb(216 135 105 / 10%);
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 8.5rem;
-  font-weight: 600;
-  letter-spacing: -.1em;
-  line-height: 1;
-  transform: translateX(-.05em);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity;
 }
-.cheeses-center > * { position: relative; z-index: 1; }
-.cheeses-center span { margin: 0; color: #a9533d; font-size: .44rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-.cheeses-center strong {
-  margin: 8px 0 4px;
-  color: #263c32;
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: clamp(2.05rem, 8.5vw, 3rem);
-  font-weight: 500;
-  letter-spacing: -.055em;
-  line-height: .82;
+.cheeses-arrows > path {
+  fill: none;
+  stroke: rgb(216 135 105 / 78%);
+  stroke-width: 1.25;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  vector-effect: non-scaling-stroke;
 }
-.cheeses-center p {
-  margin: 0;
-  color: #4a2d23;
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: .9rem;
-  line-height: 1.05;
-}
-.cheeses-center .cheeses-center-note { margin-top: 10px; color: rgb(38 60 50 / 72%); font-size: .38rem; }
+.cheeses-arrows marker path { fill: #d88769; stroke: none; }
 .cheeses-orbit { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
 .cheese-piece {
   position: absolute;
@@ -399,13 +362,6 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .memory-image-detail { margin-top: 110px; }
   .cheeses-heading { top: 48px; }
   .cheeses-together { top: 55%; width: min(29vw, 400px); }
-  .cheeses-center { top: 52%; width: min(34vw, 430px); min-height: 320px; padding: 44px 38px; }
-  .cheeses-center::before { inset: 11px; }
-  .cheeses-center::after { font-size: clamp(12rem, 19vw, 17rem); }
-  .cheeses-center span { font-size: .58rem; }
-  .cheeses-center strong { margin: 18px 0 8px; font-size: clamp(4rem, 6.4vw, 6rem); }
-  .cheeses-center p { font-size: clamp(1.35rem, 2vw, 1.85rem); }
-  .cheeses-center .cheeses-center-note { margin-top: 20px; font-size: .48rem; }
   .cheese-piece { top: 52%; }
   .visit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, 520px); gap: 7vw; padding: 120px 7vw 36px; }
   .visit-heading { display: grid; align-content: start; }
@@ -431,8 +387,8 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .cheeses-scene { position: relative; height: auto; min-height: 0; padding: 88px 28px 96px; overflow: visible; }
   .cheeses-heading, .cheese-piece { position: relative; inset: auto; opacity: 1 !important; transform: none !important; }
   .cheeses-heading { text-align: left; }
-  .cheeses-together { display: none; }
-  .cheeses-center { position: relative; inset: auto; width: min(100%, 360px); min-height: 260px; margin: 42px auto 0; opacity: 1 !important; transform: none !important; }
+  .cheeses-together { position: relative; inset: auto; display: block; width: min(100%, 280px); margin: 42px auto 0; opacity: .28 !important; transform: none !important; }
+  .cheeses-together figcaption, .cheeses-arrows { display: none; }
   .cheeses-orbit { position: relative; inset: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 48px; }
   .cheese-piece { top: auto; left: auto; width: 100%; max-width: 170px; margin: auto; }
   .cheese-label, .cheese-piece:nth-child(odd) .cheese-label, .cheese-piece:nth-child(even) .cheese-label { position: static; width: auto; margin-top: 10px; opacity: 1; text-align: center; transform: none; }
