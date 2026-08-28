@@ -312,10 +312,10 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .pastries-copy { position: relative; z-index: 2; max-width: 560px; justify-self: center; text-align: center; }
 .pastries-copy h2 { font-size: clamp(3.2rem, 13vw, 8rem); }
 .pastries-copy > p:last-child { max-width: 330px; margin: 24px auto 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.2rem; line-height: 1.35; }
-.pastries-pair { position: relative; z-index: 1; height: 510px; margin-top: 46px; }
-.pastry-display { position: absolute; width: 210px; margin: 0; filter: drop-shadow(0 28px 34px rgb(74 45 35 / 24%)); }
-.pastry-display-nata { top: 0; left: -44px; }
-.pastry-display-almond { right: -44px; bottom: 0; }
+.pastries-pair { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(2, minmax(0, 210px)); gap: 10px; justify-content: center; align-items: center; margin-top: 72px; }
+.pastry-display { width: min(42vw, 210px); margin: 0; filter: drop-shadow(0 28px 34px rgb(74 45 35 / 24%)); }
+.pastry-display-nata { transform: translateY(-28px); }
+.pastry-display-almond { transform: translateY(28px); }
 .pastry-display figcaption { margin-top: 8px; color: var(--terracotta); font-size: .56rem; font-weight: 700; letter-spacing: .13em; text-align: center; text-transform: uppercase; }
 .visit { padding: 88px 28px 28px; background: var(--terracotta); color: var(--chalk); }
 .visit .section-number { color: var(--paper); }
@@ -402,10 +402,10 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .pastries-feature { min-height: 108svh; padding: 120px 7vw; }
   .pastries-feature::before { width: min(42vw, 620px); }
   .pastries-copy { max-width: min(44vw, 650px); }
-  .pastries-pair { position: absolute; inset: 0; height: auto; margin: 0; }
+  .pastries-pair { grid-template-columns: repeat(2, minmax(0, 410px)); gap: clamp(34px, 6vw, 86px); margin-top: 84px; }
   .pastry-display { width: min(28vw, 410px); }
-  .pastry-display-nata { top: 7%; left: -3vw; }
-  .pastry-display-almond { right: -3vw; bottom: 5%; }
+  .pastry-display-nata { transform: translateY(-54px); }
+  .pastry-display-almond { transform: translateY(54px); }
   .visit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, 520px); gap: 7vw; padding: 120px 7vw 36px; }
   .visit-heading { display: grid; align-content: start; }
   .visit-card { margin-top: 0; }
