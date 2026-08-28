@@ -73,38 +73,14 @@ a:focus-visible, .cerro-list:focus-visible { outline: 3px solid var(--honey); ou
   pointer-events: none;
 }
 
-.hero-video {
+.hero-background {
   position: absolute;
   inset: 0;
   z-index: -1;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  object-position: center;
-  filter: saturate(.82) contrast(1.04);
+  object-position: center 62%;
+  filter: saturate(.88) contrast(1.03);
 }
-
-.hero-video-control {
-  position: absolute;
-  right: 28px;
-  bottom: 232px;
-  z-index: 5;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  padding: 10px 12px;
-  border: 1px solid rgb(243 239 229 / 48%);
-  background: rgb(13 13 13 / 58%);
-  color: var(--chalk);
-  font: inherit;
-  font-size: .54rem;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  backdrop-filter: blur(8px);
-  cursor: pointer;
-}
-.hero-video-control span { width: 10px; font-size: .62rem; line-height: 1; text-align: center; }
-.hero-video-control:hover, .hero-video-control:focus-visible { background: var(--terracotta); }
 
 @media (max-width: 759px) {
   .hero::after {
@@ -112,6 +88,7 @@ a:focus-visible, .cerro-list:focus-visible { outline: 3px solid var(--honey); ou
       linear-gradient(180deg, var(--chalk) 0 34%, rgb(243 239 229 / 88%) 41%, rgb(243 239 229 / 28%) 56%, transparent 72%),
       linear-gradient(90deg, rgb(243 239 229 / 44%), transparent 82%);
   }
+  .hero-background { object-position: 54% 60%; }
 }
 
 .site-header {
@@ -311,6 +288,32 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   letter-spacing: -.045em;
   line-height: .95;
 }
+.almond-feature {
+  position: relative;
+  display: grid;
+  min-height: 82svh;
+  place-items: center;
+  overflow: hidden;
+  padding: 96px 28px;
+  background:
+    radial-gradient(circle at 70% 50%, rgb(214 154 45 / 14%), transparent 34%),
+    var(--chalk);
+}
+.almond-feature::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 68%;
+  width: min(88vw, 560px);
+  aspect-ratio: 1;
+  border: 1px solid rgb(165 78 53 / 22%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.almond-copy { position: relative; z-index: 1; justify-self: start; }
+.almond-copy h2 { max-width: 720px; font-size: clamp(3.2rem, 13vw, 8rem); }
+.almond-copy > p:last-child { max-width: 290px; margin: 24px 0 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.2rem; line-height: 1.35; }
+.almond-pastry { position: relative; z-index: 1; width: 210px; margin-top: 42px; filter: drop-shadow(0 28px 34px rgb(74 45 35 / 24%)); }
 .visit { padding: 88px 28px 28px; background: var(--terracotta); color: var(--chalk); }
 .visit .section-number { color: var(--paper); }
 .visit-heading h2 { max-width: 760px; font-size: clamp(3.2rem, 13vw, 8rem); }
@@ -352,6 +355,8 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
     .cerro-list,
     .memories-copy,
     .memories-gallery,
+    .almond-copy,
+    .almond-pastry,
     .visit-heading,
     .visit-card
   ) {
@@ -376,7 +381,6 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
       linear-gradient(90deg, rgb(243 239 229 / 96%) 0 14%, rgb(243 239 229 / 84%) 31%, rgb(243 239 229 / 22%) 56%, transparent 74%),
       linear-gradient(180deg, rgb(243 239 229 / 30%), transparent 48%, rgb(13 13 13 / 14%));
   }
-  .hero-video-control { right: 52px; bottom: 268px; }
   .sun-stage { bottom: 210px; left: 34%; width: min(20vw, 260px); }
   .wood-horizon { height: 230px; }
   .cerros { padding: 120px 0; }
@@ -394,6 +398,9 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .cheeses-heading { top: 48px; }
   .cheeses-together { top: 55%; width: min(29vw, 400px); }
   .cheese-piece { top: 52%; }
+  .almond-feature { grid-template-columns: minmax(0, 1fr) minmax(300px, .78fr); gap: 7vw; min-height: 92svh; padding: 120px 7vw; }
+  .almond-feature::before { left: 74%; width: min(46vw, 680px); }
+  .almond-pastry { width: min(28vw, 410px); margin-top: 0; }
   .visit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, 520px); gap: 7vw; padding: 120px 7vw 36px; }
   .visit-heading { display: grid; align-content: start; }
   .visit-card { margin-top: 0; }
@@ -410,6 +417,8 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .cerro-list,
   .memories-copy,
   .memories-gallery,
+  .almond-copy,
+  .almond-pastry,
   .visit-heading,
   .visit-card { animation: none !important; }
   .enter-button, .skip-link { transition: none; }

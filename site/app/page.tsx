@@ -1,5 +1,4 @@
 import Image from "next/image";
-import AmbientVideo from "./AmbientVideo";
 import Queijinhos from "./Queijinhos";
 
 export default function Home() {
@@ -8,7 +7,14 @@ export default function Home() {
       <a className="skip-link" href="#historia">Saltar para o conteúdo</a>
 
       <section className="hero" aria-labelledby="hero-title">
-        <AmbientVideo />
+        <Image
+          className="hero-background"
+          src="/images/paisagem.webp"
+          alt="Vista de Alte e dos cerros a partir da Água Mel"
+          fill
+          priority
+          sizes="100vw"
+        />
 
         <header className="site-header">
           <a className="brand" href="#top" aria-label="Água Mel — início">Água Mel</a>
@@ -111,6 +117,25 @@ export default function Home() {
       </section>
 
       <Queijinhos />
+
+      <section className="almond-feature" aria-labelledby="almond-title">
+        <div className="almond-copy">
+          <p className="section-number">Da nossa montra</p>
+          <h2 id="almond-title">Pastel de<br />amêndoa.</h2>
+          <p>Visto de cima, como um segundo sol da casa.</p>
+        </div>
+
+        <div className="almond-pastry">
+          <Image
+            className="pastry-image"
+            src="/images/pastel-amendoa-top.webp"
+            alt="Pastel de amêndoa da Água Mel visto de cima"
+            width={1024}
+            height={1024}
+            sizes="(min-width: 760px) 28vw, 210px"
+          />
+        </div>
+      </section>
 
       <section className="visit" id="visitar" aria-labelledby="visit-title">
         <div className="visit-heading">
