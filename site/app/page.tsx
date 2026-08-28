@@ -88,13 +88,13 @@ export default function Home() {
           <figure className="memory-image memory-image-main">
             <div className="memory-frame">
               <Image
-                src="/images/history-wood.webp"
-                alt="Painel de madeira da Água Mel com a silhueta de Alte e fotografias antigas"
-                width={1000}
-                height={1778}
+                src="/images/fundoaguamel.webp"
+                alt="Fotografia original da família Água Mel à porta da pastelaria"
+                width={1200}
+                height={1708}
               />
             </div>
-            <figcaption>A peça em madeira</figcaption>
+            <figcaption>À porta da Água Mel</figcaption>
           </figure>
           <figure className="memory-image memory-image-detail">
             <div className="memory-frame">
