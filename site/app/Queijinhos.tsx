@@ -56,7 +56,7 @@ export default function Queijinhos() {
       const center = section.querySelector<HTMLElement>('.cheeses-center');
       if (center) {
         center.style.opacity = labelProgress.toFixed(4);
-        center.style.transform = `translate(-50%, -50%) scale(${(0.92 + labelProgress * 0.08).toFixed(4)})`;
+        center.style.transform = `translate(-50%, -50%) scaleX(${(0.72 + labelProgress * 0.28).toFixed(4)}) scaleY(${(0.9 + labelProgress * 0.1).toFixed(4)})`;
       }
     };
 
@@ -95,9 +95,10 @@ export default function Queijinhos() {
         </figure>
 
         <div className="cheeses-center">
-          <p>Água Mel · Alte</p>
-          <strong>Tradição em<br />seis sabores.</strong>
-          <span>Desde 1997</span>
+          <span className="cheeses-center-kicker">Pastelaria · Alte</span>
+          <strong>Água Mel</strong>
+          <p>A adoçar momentos<br />desde 1997.</p>
+          <span className="cheeses-center-note">Doçaria tradicional</span>
         </div>
 
         <div className="cheeses-orbit">

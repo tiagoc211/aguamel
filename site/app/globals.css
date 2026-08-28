@@ -228,20 +228,61 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   left: 50%;
   z-index: 1;
   display: grid;
-  width: min(44vw, 170px);
-  min-height: 112px;
+  width: min(54vw, 210px);
+  min-height: 150px;
   place-content: center;
-  padding: 18px 14px;
-  border: 1px solid rgb(216 135 105 / 52%);
-  border-radius: 50%;
+  overflow: hidden;
+  padding: 22px 18px;
+  border: 2px solid rgb(53 92 76 / 84%);
+  border-radius: 48% 48% 18px 18px / 32% 32% 16px 16px;
+  background: radial-gradient(circle at 50% 48%, rgb(53 92 76 / 18%), rgb(13 13 13 / 0) 68%);
   opacity: 0;
   text-align: center;
-  transform: translate(-50%, -50%) scale(.92);
+  transform: translate(-50%, -50%) scaleX(.72) scaleY(.9);
   will-change: opacity, transform;
 }
-.cheeses-center::before { content: ''; position: absolute; inset: 6px; border: 1px solid rgb(243 239 229 / 12%); border-radius: inherit; }
-.cheeses-center p, .cheeses-center span { margin: 0; color: #d98769; font-size: .48rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-.cheeses-center strong { margin: 7px 0 8px; font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.25rem, 5vw, 2rem); font-weight: 500; letter-spacing: -.04em; line-height: .9; }
+.cheeses-center::before {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  z-index: 2;
+  border: 1px solid rgb(216 135 105 / 52%);
+  border-radius: inherit;
+  pointer-events: none;
+}
+.cheeses-center::after {
+  content: '97';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: grid;
+  place-items: center;
+  color: rgb(243 239 229 / 4%);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 8.5rem;
+  font-weight: 600;
+  letter-spacing: -.1em;
+  line-height: 1;
+  transform: translateX(-.05em);
+}
+.cheeses-center > * { position: relative; z-index: 1; }
+.cheeses-center span { margin: 0; color: #d98769; font-size: .44rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.cheeses-center strong {
+  margin: 8px 0 4px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.05rem, 8.5vw, 3rem);
+  font-weight: 500;
+  letter-spacing: -.055em;
+  line-height: .82;
+}
+.cheeses-center p {
+  margin: 0;
+  color: rgb(243 239 229 / 82%);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: .9rem;
+  line-height: 1.05;
+}
+.cheeses-center .cheeses-center-note { margin-top: 10px; color: rgb(243 239 229 / 52%); font-size: .38rem; }
 .cheeses-orbit { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
 .cheese-piece {
   position: absolute;
@@ -354,7 +395,13 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .memory-image-detail { margin-top: 110px; }
   .cheeses-heading { top: 48px; }
   .cheeses-together { top: 55%; width: min(29vw, 400px); }
-  .cheeses-center { top: 52%; width: min(20vw, 250px); min-height: 0; aspect-ratio: 1; }
+  .cheeses-center { top: 52%; width: min(34vw, 430px); min-height: 320px; padding: 44px 38px; }
+  .cheeses-center::before { inset: 11px; }
+  .cheeses-center::after { font-size: clamp(12rem, 19vw, 17rem); }
+  .cheeses-center span { font-size: .58rem; }
+  .cheeses-center strong { margin: 18px 0 8px; font-size: clamp(4rem, 6.4vw, 6rem); }
+  .cheeses-center p { font-size: clamp(1.35rem, 2vw, 1.85rem); }
+  .cheeses-center .cheeses-center-note { margin-top: 20px; font-size: .48rem; }
   .cheese-piece { top: 52%; }
   .visit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, 520px); gap: 7vw; padding: 120px 7vw 36px; }
   .visit-heading { display: grid; align-content: start; }
@@ -381,7 +428,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .cheeses-heading, .cheese-piece { position: relative; inset: auto; opacity: 1 !important; transform: none !important; }
   .cheeses-heading { text-align: left; }
   .cheeses-together { display: none; }
-  .cheeses-center { position: relative; inset: auto; width: min(100%, 240px); min-height: 180px; margin: 42px auto 0; opacity: 1 !important; transform: none !important; }
+  .cheeses-center { position: relative; inset: auto; width: min(100%, 360px); min-height: 260px; margin: 42px auto 0; opacity: 1 !important; transform: none !important; }
   .cheeses-orbit { position: relative; inset: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 48px; }
   .cheese-piece { top: auto; left: auto; width: 100%; max-width: 170px; margin: auto; }
   .cheese-label, .cheese-piece:nth-child(odd) .cheese-label, .cheese-piece:nth-child(even) .cheese-label { position: static; width: auto; margin-top: 10px; opacity: 1; text-align: center; transform: none; }
