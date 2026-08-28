@@ -31,21 +31,6 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="sun-stage" aria-hidden="true">
-          <div className="pastry-sun">
-            <Image
-              className="pastry-image"
-              src="/images/pastel-nata-top.webp"
-              alt=""
-              width={1024}
-              height={1024}
-              priority
-              loading="eager"
-              sizes="(min-width: 760px) 39vw, 270px"
-            />
-          </div>
-        </div>
-
         <div className="wood-horizon" aria-hidden="true">
           <Image
             className="wood-art"
@@ -63,7 +48,19 @@ export default function Home() {
       <section className="cerros" id="historia" aria-labelledby="cerros-title">
         <div className="cerros-heading">
           <p className="section-number">01 · A casa e o lugar</p>
-          <h2 id="cerros-title">Alte, guardada<br />por quatro cerros.</h2>
+          <div className="cerros-title-row">
+            <h2 id="cerros-title">Alte, guardada<br />por quatro cerros.</h2>
+            <div className="cerros-pastry" aria-hidden="true">
+              <Image
+                className="pastry-image"
+                src="/images/pastel-nata-top.webp"
+                alt=""
+                width={1024}
+                height={1024}
+                sizes="(min-width: 760px) 28vw, 210px"
+              />
+            </div>
+          </div>
           <p className="cerros-intro">Galvana, Francelheira, Castelo e Rocha Maior formam o horizonte da nossa história. Cada cerro será uma entrada para as memórias representadas na peça em madeira.</p>
         </div>
 

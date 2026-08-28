@@ -120,8 +120,6 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 }
 .enter-button:hover, .enter-button:focus-visible { background: var(--wood); transform: translateY(-2px); }
 
-.sun-stage { position: absolute; bottom: 158px; left: -42px; z-index: 2; width: 200px; aspect-ratio: 1; filter: drop-shadow(0 22px 26px rgb(74 45 35 / 18%)); }
-.pastry-sun { width: 100%; height: 100%; }
 .pastry-image { display: block; width: 100%; height: 100%; object-fit: contain; transform-origin: center; }
 .wood-horizon {
   position: absolute; right: 0; bottom: 0; left: 0; z-index: 3; height: 210px; overflow: hidden;
@@ -140,6 +138,8 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .cerros-heading { padding: 0 28px; }
 .cerros-heading .section-number { color: #d98769; }
 .cerros-heading h2 { max-width: 680px; font-size: clamp(3rem, 12vw, 7.5rem); }
+.cerros-title-row { display: grid; grid-template-columns: minmax(0, 1fr) 120px; gap: 8px; align-items: center; }
+.cerros-pastry { width: 210px; margin-left: -18px; filter: drop-shadow(0 28px 34px rgb(18 16 15 / 32%)); }
 .cerros-intro { max-width: 520px; margin: 26px 0 0; color: rgb(243 239 229 / 72%); line-height: 1.65; }
 .cerro-list {
   display: flex;
@@ -216,6 +216,26 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 }
 .cheeses-together img { display: block; width: 100%; height: auto; }
 .cheeses-together figcaption { margin-top: 14px; color: rgb(243 239 229 / 58%); font-size: .56rem; letter-spacing: .14em; text-align: center; text-transform: uppercase; }
+.cheeses-center {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  z-index: 1;
+  display: grid;
+  width: min(44vw, 170px);
+  min-height: 112px;
+  place-content: center;
+  padding: 18px 14px;
+  border: 1px solid rgb(216 135 105 / 52%);
+  border-radius: 50%;
+  opacity: 0;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(.92);
+  will-change: opacity, transform;
+}
+.cheeses-center::before { content: ''; position: absolute; inset: 6px; border: 1px solid rgb(243 239 229 / 12%); border-radius: inherit; }
+.cheeses-center p, .cheeses-center span { margin: 0; color: #d98769; font-size: .48rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.cheeses-center strong { margin: 7px 0 8px; font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.25rem, 5vw, 2rem); font-weight: 500; letter-spacing: -.04em; line-height: .9; }
 .cheeses-orbit { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
 .cheese-piece {
   position: absolute;
@@ -305,10 +325,6 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .cerro-list, .visit-card { animation-range: entry 4% cover 22%; }
 }
 
-@media (max-width: 360px) {
-  .sun-stage { bottom: 164px; left: -40px; width: 184px; }
-}
-
 @media (min-width: 760px) {
   .site-header { padding: 38px 52px 0; grid-template-columns: 1fr auto 1fr; }
   .location { grid-column: 2; grid-row: 1; }
@@ -320,7 +336,9 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .wood-horizon { height: 230px; }
   .cerros { padding: 120px 0; }
   .cerros-heading { display: grid; grid-template-columns: 180px minmax(0, 1fr); padding: 0 7vw; }
-  .cerros-heading h2, .cerros-intro { grid-column: 2; }
+  .cerros-title-row, .cerros-intro { grid-column: 2; }
+  .cerros-title-row { grid-template-columns: minmax(0, 1fr) minmax(260px, 34%); gap: clamp(24px, 4vw, 70px); }
+  .cerros-pastry { width: min(28vw, 410px); margin-left: 0; }
   .cerro-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; padding: 0 7vw 6px; }
   .cerro-card { min-width: 0; min-height: 390px; }
   .cerro-card h3 { font-size: clamp(1.8rem, 3.2vw, 3rem); }
@@ -330,6 +348,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .memory-image-detail { margin-top: 110px; }
   .cheeses-heading { top: 48px; }
   .cheeses-together { top: 55%; width: min(29vw, 400px); }
+  .cheeses-center { top: 52%; width: min(20vw, 250px); min-height: 0; aspect-ratio: 1; }
   .cheese-piece { top: 52%; }
   .visit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, 520px); gap: 7vw; padding: 120px 7vw 36px; }
   .visit-heading { display: grid; align-content: start; }
@@ -356,6 +375,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .cheeses-heading, .cheese-piece { position: relative; inset: auto; opacity: 1 !important; transform: none !important; }
   .cheeses-heading { text-align: left; }
   .cheeses-together { display: none; }
+  .cheeses-center { position: relative; inset: auto; width: min(100%, 240px); min-height: 180px; margin: 42px auto 0; opacity: 1 !important; transform: none !important; }
   .cheeses-orbit { position: relative; inset: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 48px; }
   .cheese-piece { top: auto; left: auto; width: 100%; max-width: 170px; margin: auto; }
   .cheese-label, .cheese-piece:nth-child(odd) .cheese-label, .cheese-piece:nth-child(even) .cheese-label { position: static; width: auto; margin-top: 10px; opacity: 1; text-align: center; transform: none; }

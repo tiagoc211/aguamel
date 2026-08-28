@@ -52,6 +52,12 @@ export default function Queijinhos() {
         together.style.opacity = (1 - split).toFixed(4);
         together.style.transform = `translate(-50%, -50%) scale(${(1 - split * 0.08).toFixed(4)})`;
       }
+
+      const center = section.querySelector<HTMLElement>('.cheeses-center');
+      if (center) {
+        center.style.opacity = labelProgress.toFixed(4);
+        center.style.transform = `translate(-50%, -50%) scale(${(0.92 + labelProgress * 0.08).toFixed(4)})`;
+      }
     };
 
     const requestUpdate = () => {
@@ -87,6 +93,12 @@ export default function Queijinhos() {
           />
           <figcaption>Desça para os descobrir</figcaption>
         </figure>
+
+        <div className="cheeses-center">
+          <p>Água Mel · Alte</p>
+          <strong>Tradição em<br />seis sabores.</strong>
+          <span>Desde 1997</span>
+        </div>
 
         <div className="cheeses-orbit">
           {products.map((product) => (
