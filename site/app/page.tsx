@@ -106,13 +106,7 @@ export default function Home() {
 
       <Queijinhos />
 
-      <section className="pastries-feature" aria-labelledby="pastries-title">
-        <div className="pastries-copy">
-          <p className="section-number">Da nossa montra</p>
-          <h2 id="pastries-title">Dois pastéis.<br />Dois sóis.</h2>
-          <p>O pastel de nata e o pastel de amêndoa, feitos na Água Mel.</p>
-        </div>
-
+      <section className="pastries-feature" aria-label="Pastéis da Água Mel">
         <div className="pastries-pair">
           <figure className="pastry-display pastry-display-nata">
             <Image
