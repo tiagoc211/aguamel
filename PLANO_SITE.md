@@ -33,16 +33,16 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 ### 4. Estrutura da página
 
-- [ ] **Entrada:** a ilustração panorâmica criada a partir do arquivo familiar dá profundidade ao hero enquanto o vídeo contínuo a entrar pela porta não está disponível; manter o pastel-sol 2D e o convite “Entre”.
+- [x] **Entrada:** o vídeo real conduz o olhar pela porta até à vista de Alte, com imagem de poster, controlo de pausa/repetição e o convite “Entre”.
 - [x] **Os quatro cerros:** introdução única para a casa e o lugar, com o pastel-sol em grande junto ao título, seguida pelo percurso visual dos quatro cerros.
 - [x] **Uma casa com história:** composição visual com a peça de madeira e fotografias antigas; identificação detalhada pendente da família.
 - [x] **Os queijinhos:** fotografia conjunta; a separação começa apenas quando a secção ocupa todo o ecrã e termina com os seis nomes ligados por setas à fotografia, que permanece translúcida no centro.
-- [x] **Visite-nos:** estrutura, morada, mapa e Instagram; horário e telefone por validar.
+- [x] **Visite-nos:** morada, mapa, Instagram e horário das 09:00 às 17:00; sem telefone por opção da casa.
 
 ### 5. Construção
 
 - [x] Preparar e comprimir as imagens usadas nesta entrega, incluindo a peça de madeira e os sete assets dos queijinhos.
-- [ ] Preparar e comprimir o novo vídeo de entrada quando estiver disponível.
+- [x] Preparar e comprimir o vídeo de entrada em H.264 para a abertura da página.
 - [x] Construir a página responsiva e os movimentos de scroll, com melhoria progressiva e reduced motion.
 - [x] Adicionar SEO local, dados estruturados mínimos, canonical, sitemap, robots, Open Graph e favicon.
 - [x] Garantir contraste, texto alternativo, navegação por teclado e opção de reduzir animações.
@@ -54,8 +54,8 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [x] Testar responsividade entre 320 e 1440 px, navegação interna, scroll e consola num browser Chromium.
 - [ ] Confirmar em dispositivos reais: iPhone/Safari, Android/Chrome e uma ligação móvel lenta.
 - [x] Inventariar imagens, fontes e licenças; não existe qualquer modelo 3D.
-- [ ] Validar horários, telefone, mapa, traduções e direitos de publicação das imagens.
-- [x] Rever desempenho sem 3D; imagens e partilha social otimizadas. O vídeo final será revisto quando estiver disponível.
+- [ ] Validar mapa, traduções e direitos de publicação das imagens e do vídeo.
+- [x] Rever desempenho sem 3D; imagens, vídeo e partilha social otimizados.
 - [ ] Fazer uma revisão final com a família para confirmar a história e os símbolos de Alte.
 - [ ] Publicar, ligar o domínio `aguamel.pt` e confirmar indexação e partilhas sociais.
 
@@ -63,7 +63,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 Um protótipo navegável apenas da página inicial, com:
 
-1. hero e botão “Entre”; vídeo de entrada pendente;
+1. hero com vídeo de entrada e botão “Entre”;
 2. pastel-sol 2D com rotação ligada ao scroll;
 3. silhueta dos quatro cerros;
 4. uma secção de história;

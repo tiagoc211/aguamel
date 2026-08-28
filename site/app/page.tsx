@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AmbientVideo from "./AmbientVideo";
 import Queijinhos from "./Queijinhos";
 
 export default function Home() {
@@ -7,14 +8,7 @@ export default function Home() {
       <a className="skip-link" href="#historia">Saltar para o conteúdo</a>
 
       <section className="hero" aria-labelledby="hero-title">
-        <Image
-          className="hero-background"
-          src="/images/hero-family-illustrated.webp"
-          alt="A família Água Mel à porta da pastelaria, numa ilustração baseada numa fotografia antiga"
-          fill
-          priority
-          sizes="100vw"
-        />
+        <AmbientVideo />
 
         <header className="site-header">
           <a className="brand" href="#top" aria-label="Água Mel — início">Água Mel</a>

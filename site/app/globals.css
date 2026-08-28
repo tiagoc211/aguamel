@@ -73,7 +73,38 @@ a:focus-visible, .cerro-list:focus-visible { outline: 3px solid var(--honey); ou
   pointer-events: none;
 }
 
-.hero-background { position: absolute; inset: 0; z-index: -1; object-fit: cover; object-position: 69% center; }
+.hero-video {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(.82) contrast(1.04);
+}
+
+.hero-video-control {
+  position: absolute;
+  right: 28px;
+  bottom: 232px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 12px;
+  border: 1px solid rgb(243 239 229 / 48%);
+  background: rgb(13 13 13 / 58%);
+  color: var(--chalk);
+  font: inherit;
+  font-size: .54rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+}
+.hero-video-control span { width: 10px; font-size: .62rem; line-height: 1; text-align: center; }
+.hero-video-control:hover, .hero-video-control:focus-visible { background: var(--terracotta); }
 
 @media (max-width: 759px) {
   .hero::after {
@@ -81,7 +112,7 @@ a:focus-visible, .cerro-list:focus-visible { outline: 3px solid var(--honey); ou
       linear-gradient(180deg, var(--chalk) 0 34%, rgb(243 239 229 / 88%) 41%, rgb(243 239 229 / 28%) 56%, transparent 72%),
       linear-gradient(90deg, rgb(243 239 229 / 44%), transparent 82%);
   }
-  .hero-background { top: 330px !important; bottom: auto !important; height: calc(100% - 330px) !important; object-position: 64% center; }
+  .hero-video { object-position: 54% center; }
 }
 
 .site-header {
@@ -341,8 +372,12 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .location { grid-column: 2; grid-row: 1; }
   .visit-link { justify-self: end; grid-column: 3; grid-row: 1; }
   .hero-copy { padding: clamp(100px, 18vh, 172px) 7vw 300px; }
-  .hero::after { background: linear-gradient(90deg, rgb(243 239 229 / 96%) 0 13%, rgb(243 239 229 / 82%) 30%, rgb(243 239 229 / 18%) 56%, transparent 74%); }
-  .hero-background { object-position: center; }
+  .hero::after {
+    background:
+      linear-gradient(90deg, rgb(243 239 229 / 96%) 0 14%, rgb(243 239 229 / 84%) 31%, rgb(243 239 229 / 22%) 56%, transparent 74%),
+      linear-gradient(180deg, rgb(243 239 229 / 30%), transparent 48%, rgb(13 13 13 / 14%));
+  }
+  .hero-video-control { right: 52px; bottom: 268px; }
   .sun-stage { bottom: 210px; left: 34%; width: min(20vw, 260px); }
   .wood-horizon { height: 230px; }
   .cerros { padding: 120px 0; }
