@@ -31,8 +31,8 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <Image
           className="hero-background"
-          src="/images/fundoaguamel.webp"
-          alt="Família Água Mel à porta da pastelaria"
+          src="/images/hero-family-illustrated.webp"
+          alt="Família Água Mel à porta da pastelaria, numa composição expandida a partir da fotografia original"
           fill
           priority
           sizes="100vw"
