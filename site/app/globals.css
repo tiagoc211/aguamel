@@ -131,7 +131,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .wood-horizon {
   position: absolute; right: 0; bottom: 0; left: 0; z-index: 3; height: 210px; overflow: hidden;
 }
-.wood-art { position: absolute; bottom: -1px; left: 50%; display: block; width: max(960px, calc(100vw + 48px)); max-width: none; height: auto; transform: translateX(-50%); }
+.wood-art { position: absolute; bottom: -1px; left: 50%; display: block; width: max(960px, 112vw); max-width: none; height: auto; transform: translateX(-50%); }
 
 .cerros {
   overflow: hidden;
