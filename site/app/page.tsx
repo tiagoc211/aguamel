@@ -31,8 +31,8 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <Image
           className="hero-background"
-          src="/images/paisagem.webp"
-          alt="Vista de Alte e dos cerros a partir da Água Mel"
+          src="/images/fundoaguamel.webp"
+          alt="Família Água Mel à porta da pastelaria"
           fill
           priority
           sizes="100vw"
@@ -116,13 +116,13 @@ export default function Home() {
           <figure className="memory-image memory-image-main">
             <div className="memory-frame">
               <Image
-                src="/images/fundoaguamel.webp"
-                alt="Fotografia original da família Água Mel à porta da pastelaria"
-                width={1200}
-                height={1708}
+                src="/images/paisagem.webp"
+                alt="Vista de Alte e dos cerros a partir da Água Mel"
+                width={2400}
+                height={1800}
               />
             </div>
-            <figcaption>À porta da Água Mel</figcaption>
+            <figcaption>Vista de Alte</figcaption>
           </figure>
           <figure className="memory-image memory-image-detail">
             <div className="memory-frame">

@@ -33,9 +33,9 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 ### 4. Estrutura da página
 
-- [x] **Entrada:** a fotografia real da paisagem de Alte cria um fundo calmo para o hero e para o convite “Entre”.
+- [x] **Entrada:** a fotografia da família à porta da Água Mel ocupa o hero e acompanha o convite “Entre”.
 - [x] **Os quatro cerros:** mapa simbólico com a fachada da Água Mel ao centro e Galvana, Francelheira, Castelo e Rocha Maior dispostos à sua volta.
-- [x] **Uma casa com história:** composição visual com a peça de madeira e fotografias antigas; identificação detalhada pendente da família.
+- [x] **Uma casa com história:** composição visual com a vista de Alte, a peça de madeira e fotografias antigas; identificação detalhada pendente da família.
 - [x] **Arquivo de Alte:** 19 fotografias antigas isoladas das molduras, endireitadas e reunidas numa galeria editorial responsiva.
 - [x] **Os queijinhos:** fotografia conjunta; a separação começa apenas quando a secção ocupa todo o ecrã e termina com os seis nomes ligados por setas à fotografia, que permanece translúcida no centro.
 - [x] **Pastéis da casa:** pastel de nata à esquerda e mais acima, pastel de amêndoa à direita e mais abaixo, ambos grandes e com rotação ligada ao scroll.
@@ -65,7 +65,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 
 Um protótipo navegável apenas da página inicial, com:
 
-1. hero com a paisagem de Alte e botão “Entre”;
+1. hero com a fotografia da família e botão “Entre”;
 2. os dois pastéis 2D com rotação ligada ao scroll;
 3. silhueta dos quatro cerros;
 4. uma secção de história;
