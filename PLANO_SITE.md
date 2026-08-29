@@ -39,7 +39,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [x] **Arquivo de Alte:** 18 fotografias antigas distintas, isoladas das molduras, endireitadas e reunidas numa galeria editorial responsiva.
 - [x] **Os queijinhos:** fotografia conjunta; a separação começa apenas quando a secção ocupa todo o ecrã e termina com os seis nomes ligados por setas à fotografia, que permanece translúcida no centro.
 - [x] **Pastéis da casa:** pastel de nata à esquerda e mais acima, pastel de amêndoa à direita e mais abaixo, ambos grandes e com rotação ligada ao scroll.
-- [x] **Visite-nos:** morada, mapa, Instagram e horário das 09:00 às 17:00, todos os dias exceto domingo; sem telefone por opção da casa.
+- [x] **Visite-nos:** morada, mapa, Instagram e horário das 09:00 às 18:00, todos os dias exceto domingo; sem telefone por opção da casa.
 
 ### 5. Construção
 

@@ -222,7 +222,7 @@ export default function Home() {
           </div>
 
           <dl className="visit-details">
-            <div><dt>Horário</dt><dd>09:00–17:00 · Todos os dias, exceto domingo</dd></div>
+            <div><dt>Horário</dt><dd>09:00–18:00 · Todos os dias, exceto domingo</dd></div>
             <div>
               <dt>Instagram</dt>
               <dd>
