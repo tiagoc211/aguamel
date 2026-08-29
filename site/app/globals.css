@@ -369,7 +369,7 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .site-footer p { margin: 0; }
 .site-footer a { width: fit-content; margin-top: 10px; }
 
-@keyframes pastry-spin { to { transform: rotate(360deg); } }
+@keyframes pastry-spin { to { transform: rotate(1440deg); } }
 @keyframes reveal-up { from { opacity: 0; transform: translateY(38px); } to { opacity: 1; transform: translateY(0); } }
 
 @supports (animation-timeline: scroll()) {
