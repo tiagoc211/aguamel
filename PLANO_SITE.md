@@ -34,7 +34,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 ### 4. Estrutura da página
 
 - [x] **Entrada:** a fotografia real da paisagem de Alte cria um fundo calmo para o hero e para o convite “Entre”.
-- [x] **Os quatro cerros:** introdução única para a casa e o lugar, seguida pelo percurso visual dos quatro cerros.
+- [x] **Os quatro cerros:** mapa simbólico com a fachada da Água Mel ao centro e Galvana, Francelheira, Castelo e Rocha Maior dispostos à sua volta.
 - [x] **Uma casa com história:** composição visual com a peça de madeira e fotografias antigas; identificação detalhada pendente da família.
 - [x] **Arquivo de Alte:** 19 fotografias antigas isoladas das molduras, endireitadas e reunidas numa galeria editorial responsiva.
 - [x] **Os queijinhos:** fotografia conjunta; a separação começa apenas quando a secção ocupa todo o ecrã e termina com os seis nomes ligados por setas à fotografia, que permanece translúcida no centro.

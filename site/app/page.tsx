@@ -73,24 +73,36 @@ export default function Home() {
           <p className="cerros-intro">Galvana, Francelheira, Castelo e Rocha Maior formam o horizonte da nossa história.</p>
         </div>
 
-        <ol className="cerro-list" aria-label="Os quatro cerros de Alte" tabIndex={0}>
-          <li className="cerro-card">
-            <p className="cerro-number">01</p>
-            <h3>Galvana</h3>
-          </li>
-          <li className="cerro-card">
-            <p className="cerro-number">02</p>
-            <h3>Francelheira</h3>
-          </li>
-          <li className="cerro-card">
-            <p className="cerro-number">03</p>
-            <h3>Castelo</h3>
-          </li>
-          <li className="cerro-card">
-            <p className="cerro-number">04</p>
-            <h3>Rocha Maior</h3>
-          </li>
-        </ol>
+        <div className="cerros-map">
+          <div className="bakery-marker" aria-label="Água Mel no centro dos quatro cerros">
+            <div className="bakery-icon" aria-hidden="true">
+              <span className="bakery-awning" />
+              <span className="bakery-door" />
+              <span className="bakery-window" />
+            </div>
+            <strong>Água Mel</strong>
+            <small>No coração de Alte</small>
+          </div>
+
+          <ol className="cerro-list" aria-label="Os quatro cerros que rodeiam a Água Mel">
+            <li className="cerro-card">
+              <p className="cerro-number">01</p>
+              <h3>Galvana</h3>
+            </li>
+            <li className="cerro-card">
+              <p className="cerro-number">02</p>
+              <h3>Francelheira</h3>
+            </li>
+            <li className="cerro-card">
+              <p className="cerro-number">03</p>
+              <h3>Castelo</h3>
+            </li>
+            <li className="cerro-card">
+              <p className="cerro-number">04</p>
+              <h3>Rocha Maior</h3>
+            </li>
+          </ol>
+        </div>
       </section>
 
       <section className="memories" id="memorias" aria-labelledby="memories-title">

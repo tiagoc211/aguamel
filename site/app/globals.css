@@ -145,39 +145,45 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .cerros-heading .section-number { color: #d98769; }
 .cerros-heading h2 { max-width: 680px; font-size: clamp(3rem, 12vw, 7.5rem); }
 .cerros-intro { max-width: 520px; margin: 26px 0 0; color: rgb(243 239 229 / 72%); line-height: 1.65; }
-.cerro-list {
-  display: flex;
-  gap: 12px;
-  margin: 56px 0 0;
-  padding: 0 28px 18px;
-  overflow-x: auto;
-  list-style: none;
-  scroll-padding-left: 28px;
-  scroll-snap-type: x mandatory;
-  scrollbar-color: rgb(243 239 229 / 22%) transparent;
-}
+.cerros-map { position: relative; height: 720px; margin: 56px 18px 0; isolation: isolate; }
+.cerros-map::before { content: ''; position: absolute; top: 50%; left: 50%; z-index: -1; width: min(70vw, 430px); aspect-ratio: 1; border: 1px solid rgb(214 154 45 / 34%); border-radius: 50%; transform: translate(-50%, -50%); }
+.cerros-map::after { content: ''; position: absolute; inset: 18% 12%; z-index: -1; background: linear-gradient(90deg, transparent calc(50% - .5px), rgb(243 239 229 / 13%) 50%, transparent calc(50% + .5px)), linear-gradient(transparent calc(50% - .5px), rgb(243 239 229 / 13%) 50%, transparent calc(50% + .5px)); transform: rotate(45deg); }
+.bakery-marker { position: absolute; top: 50%; left: 50%; z-index: 3; display: grid; width: 152px; aspect-ratio: 1; place-content: center; border: 1px solid rgb(214 154 45 / 62%); border-radius: 50%; background: var(--chalk); color: var(--wood); text-align: center; transform: translate(-50%, -50%); box-shadow: 0 0 0 12px rgb(214 154 45 / 8%), 0 22px 50px rgb(13 13 13 / 26%); }
+.bakery-marker strong { margin-top: 8px; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.3rem; font-weight: 600; letter-spacing: -.035em; line-height: 1; }
+.bakery-marker small { margin-top: 5px; color: var(--terracotta); font-size: .42rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.bakery-icon { position: relative; width: 62px; height: 45px; margin: 0 auto; border: 1px solid var(--terracotta); border-top: 0; }
+.bakery-icon::before { content: ''; position: absolute; right: -7px; bottom: 100%; left: -7px; height: 16px; background: var(--terracotta); clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+.bakery-awning { position: absolute; top: 0; right: 0; left: 0; height: 12px; background: repeating-linear-gradient(90deg, var(--honey) 0 8px, var(--chalk) 8px 16px); border-bottom: 1px solid var(--terracotta); }
+.bakery-door { position: absolute; bottom: 0; left: 22px; width: 18px; height: 25px; background: var(--wood); }
+.bakery-window { position: absolute; right: 5px; bottom: 8px; width: 12px; height: 12px; border: 1px solid var(--terracotta); }
+.cerro-list { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; }
 .cerro-card {
-  position: relative;
-  flex: 0 0 min(78vw, 310px);
-  min-height: 350px;
+  position: absolute;
+  width: 44%;
+  min-height: 154px;
   overflow: hidden;
-  padding: 24px;
+  padding: 18px;
   border: 1px solid rgb(243 239 229 / 22%);
-  scroll-snap-align: start;
+  background: rgb(243 239 229 / 3%);
 }
+.cerro-card:nth-child(1) { top: 0; left: 0; }
+.cerro-card:nth-child(2) { top: 0; right: 0; }
+.cerro-card:nth-child(3) { bottom: 0; left: 0; }
+.cerro-card:nth-child(4) { right: 0; bottom: 0; }
 .cerro-card::after {
   content: '';
   position: absolute;
-  right: -28%;
-  bottom: -32%;
-  width: 145%;
-  aspect-ratio: 1.7;
-  border: 1px solid rgb(214 154 45 / 38%);
+  right: -18%;
+  bottom: -44%;
+  width: 136%;
+  aspect-ratio: 1.6;
+  border: 1px solid rgb(214 154 45 / 48%);
   border-radius: 50% 50% 0 0;
-  transform: rotate(-4deg);
+  background: rgb(214 154 45 / 5%);
+  transform: rotate(-5deg);
 }
 .cerro-number { margin: 0; color: #d98769; font-size: .68rem; letter-spacing: .16em; }
-.cerro-card h3 { position: relative; z-index: 1; margin: 76px 0 18px; font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2.1rem, 9vw, 3rem); font-weight: 500; letter-spacing: -.045em; }
+.cerro-card h3 { position: relative; z-index: 1; margin: 42px 0 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.55rem, 7vw, 3rem); font-weight: 500; letter-spacing: -.045em; line-height: .9; }
 .cerro-card > p:not(.cerro-number) { position: relative; z-index: 1; max-width: 230px; margin: 0; color: rgb(243 239 229 / 76%); line-height: 1.5; }
 
 .memories { padding: 88px 28px 96px; background: var(--paper); }
@@ -414,9 +420,20 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .cerros { padding: 120px 0; }
   .cerros-heading { display: grid; grid-template-columns: 180px minmax(0, 1fr); padding: 0 7vw; }
   .cerros-heading h2, .cerros-intro { grid-column: 2; }
-  .cerro-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; padding: 0 7vw 6px; }
-  .cerro-card { min-width: 0; min-height: 390px; }
-  .cerro-card h3 { font-size: clamp(1.8rem, 3.2vw, 3rem); }
+  .cerros-map { height: 720px; margin: 84px 7vw 0; }
+  .cerros-map::before { width: min(40vw, 560px); }
+  .cerros-map::after { inset: 14% 18%; }
+  .bakery-marker { width: 196px; }
+  .bakery-marker strong { font-size: 1.65rem; }
+  .bakery-marker small { font-size: .48rem; }
+  .bakery-icon { width: 74px; height: 53px; }
+  .bakery-door { left: 27px; width: 20px; height: 30px; }
+  .cerro-card { width: min(27vw, 310px); min-height: 210px; padding: 24px; }
+  .cerro-card:nth-child(1) { top: 2%; left: 4%; }
+  .cerro-card:nth-child(2) { top: 2%; right: 4%; }
+  .cerro-card:nth-child(3) { bottom: 2%; left: 4%; }
+  .cerro-card:nth-child(4) { right: 4%; bottom: 2%; }
+  .cerro-card h3 { margin-top: 66px; font-size: clamp(2rem, 3.2vw, 3.2rem); }
   .memories { display: grid; grid-template-columns: minmax(260px, .72fr) minmax(340px, 1.28fr); gap: 7vw; padding: 120px 7vw; }
   .memories-copy { align-self: center; }
   .memories-gallery { gap: 22px; margin-top: 0; }
