@@ -23,7 +23,11 @@ export const metadata: Metadata = {
   title: 'Água Mel — Doçaria tradicional em Alte',
   description: SITE_DESCRIPTION,
   alternates: { canonical: '/' },
-  icons: { icon: '/favicon.svg' },
+  icons: {
+    icon: [{ url: '/favicon.png', type: 'image/png', sizes: '512x512' }],
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   robots: { index: true, follow: true },
   openGraph: {
     title: 'Água Mel',
