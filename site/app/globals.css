@@ -192,6 +192,15 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
 .memory-image-detail img { object-position: 50% 20%; }
 .memory-image figcaption { padding-top: 12px; border-top: 1px solid rgb(74 45 35 / 30%); color: var(--terracotta); font-size: .56rem; font-weight: 700; letter-spacing: .11em; line-height: 1.45; text-transform: uppercase; }
 
+.archive { padding: 96px 28px; background: #d8d0c1; color: var(--ink); }
+.archive-heading { margin-bottom: 54px; }
+.archive-heading h2 { max-width: 680px; font-size: clamp(3.2rem, 13vw, 8rem); }
+.archive-heading > p:last-child { max-width: 430px; margin: 26px 0 0; line-height: 1.65; }
+.archive-grid { columns: 1; column-gap: 18px; }
+.archive-photo { break-inside: avoid; margin: 0 0 28px; }
+.archive-photo img { display: block; width: 100%; height: auto; filter: sepia(.06) contrast(1.02); }
+.archive-photo figcaption { margin-top: 10px; padding-top: 9px; border-top: 1px solid rgb(74 45 35 / 28%); color: var(--terracotta); font-size: .54rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+
 .cheeses { position: relative; height: 180svh; overflow: clip; background: #0d0d0d; color: var(--chalk); }
 .cheeses-scene { position: sticky; top: 0; height: 100svh; min-height: 700px; overflow: hidden; isolation: isolate; }
 .cheeses-scene::before {
@@ -352,6 +361,8 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
     .cerro-list,
     .memories-copy,
     .memories-gallery,
+    .archive-heading,
+    .archive-grid,
     .pastry-display,
     .visit-heading,
     .visit-card
@@ -389,6 +400,10 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .memories-copy { align-self: center; }
   .memories-gallery { gap: 22px; margin-top: 0; }
   .memory-image-detail { margin-top: 110px; }
+  .archive { display: grid; grid-template-columns: minmax(260px, .54fr) minmax(0, 1.46fr); gap: 7vw; align-items: start; padding: 120px 7vw; }
+  .archive-heading { position: sticky; top: 90px; margin-bottom: 0; }
+  .archive-grid { columns: 2; }
+  .archive-photo { margin-bottom: 36px; }
   .cheeses-heading { top: 48px; }
   .cheeses-together { top: 55%; width: min(29vw, 400px); }
   .cheese-piece { top: 52%; }
@@ -414,6 +429,8 @@ h1 { max-width: 740px; font-size: clamp(3.55rem, 16.2vw, 8rem); }
   .cerro-list,
   .memories-copy,
   .memories-gallery,
+  .archive-heading,
+  .archive-grid,
   .pastry-display,
   .visit-heading,
   .visit-card { animation: none !important; }

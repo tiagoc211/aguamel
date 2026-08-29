@@ -36,13 +36,14 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [x] **Entrada:** a fotografia real da paisagem de Alte cria um fundo calmo para o hero e para o convite “Entre”.
 - [x] **Os quatro cerros:** introdução única para a casa e o lugar, seguida pelo percurso visual dos quatro cerros.
 - [x] **Uma casa com história:** composição visual com a peça de madeira e fotografias antigas; identificação detalhada pendente da família.
+- [x] **Arquivo de Alte:** 19 fotografias antigas isoladas das molduras, endireitadas e reunidas numa galeria editorial responsiva.
 - [x] **Os queijinhos:** fotografia conjunta; a separação começa apenas quando a secção ocupa todo o ecrã e termina com os seis nomes ligados por setas à fotografia, que permanece translúcida no centro.
 - [x] **Pastéis da casa:** pastel de nata à esquerda e mais acima, pastel de amêndoa à direita e mais abaixo, ambos grandes e com rotação ligada ao scroll.
 - [x] **Visite-nos:** morada, mapa, Instagram e horário das 09:00 às 17:00; sem telefone por opção da casa.
 
 ### 5. Construção
 
-- [x] Preparar e comprimir as imagens usadas nesta entrega, incluindo a peça de madeira, os sete assets dos queijinhos e o pastel de amêndoa recortado.
+- [x] Preparar e comprimir as imagens usadas nesta entrega, incluindo a peça de madeira, os sete assets dos queijinhos, o pastel de amêndoa e os 19 retratos antigos de Alte.
 - [x] Preparar e comprimir a fotografia panorâmica usada na abertura da página.
 - [x] Construir a página responsiva e os movimentos de scroll, com melhoria progressiva e reduced motion.
 - [x] Adicionar SEO local, dados estruturados mínimos, canonical, sitemap, robots, Open Graph e favicon.
@@ -68,7 +69,8 @@ Um protótipo navegável apenas da página inicial, com:
 2. os dois pastéis 2D com rotação ligada ao scroll;
 3. silhueta dos quatro cerros;
 4. uma secção de história;
-5. pastel de nata e pastel de amêndoa juntos, com movimento ligado ao scroll;
-6. uma secção de visita/contactos.
+5. um arquivo visual com 19 fotografias antigas de Alte;
+6. pastel de nata e pastel de amêndoa juntos, com movimento ligado ao scroll;
+7. uma secção de visita/contactos.
 
 Depois de aprovada esta experiência, avançamos para conteúdo completo, traduções e acabamento.

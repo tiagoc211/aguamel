@@ -1,6 +1,28 @@
 import Image from "next/image";
 import Queijinhos from "./Queijinhos";
 
+const archiveImages = [
+  { id: 1177, width: 1449, height: 1086 },
+  { id: 1178, width: 1122, height: 1402 },
+  { id: 1179, width: 1023, height: 1537 },
+  { id: 1180, width: 1533, height: 1026 },
+  { id: 1181, width: 1536, height: 1024 },
+  { id: 1182, width: 1536, height: 1024 },
+  { id: 1183, width: 1504, height: 1046 },
+  { id: 1184, width: 1547, height: 1016 },
+  { id: 1185, width: 1600, height: 938 },
+  { id: 1186, width: 1506, height: 1045 },
+  { id: 1187, width: 1555, height: 1012 },
+  { id: 1188, width: 1529, height: 1029 },
+  { id: 1189, width: 1518, height: 1036 },
+  { id: 1190, width: 1536, height: 1024 },
+  { id: 1191, width: 1495, height: 1052 },
+  { id: 1192, width: 1494, height: 1052 },
+  { id: 1193, width: 1536, height: 1024 },
+  { id: 1194, width: 1530, height: 1028 },
+  { id: 1195, width: 1459, height: 1078 },
+] as const;
+
 export default function Home() {
   return (
     <main>
@@ -104,6 +126,29 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="archive" aria-labelledby="archive-title">
+        <div className="archive-heading">
+          <p className="section-number">03 · Arquivo de Alte</p>
+          <h2 id="archive-title">Alte, noutro<br />tempo.</h2>
+          <p>Ruas, casas e pessoas da aldeia, vistas agora sem as molduras.</p>
+        </div>
+
+        <div className="archive-grid">
+          {archiveImages.map((photo, index) => (
+            <figure className="archive-photo" key={photo.id}>
+              <Image
+                src={`/images/arquivo-alte/retrato-${photo.id}.webp`}
+                alt={`Fotografia antiga de Alte, arquivo ${String(index + 1).padStart(2, "0")}`}
+                width={photo.width}
+                height={photo.height}
+                sizes="(min-width: 1100px) 31vw, (min-width: 760px) 43vw, 100vw"
+              />
+              <figcaption>Arquivo {String(index + 1).padStart(2, "0")}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
       <Queijinhos />
 
       <section className="pastries-feature" aria-label="Pastéis da Água Mel">
@@ -136,7 +181,7 @@ export default function Home() {
 
       <section className="visit" id="visitar" aria-labelledby="visit-title">
         <div className="visit-heading">
-          <p className="section-number">04 · Visite-nos</p>
+          <p className="section-number">05 · Visite-nos</p>
           <h2 id="visit-title">A porta está<br />em Alte.</h2>
           <p>Encontre-nos no Largo José Cavaco Vieira, no coração de Alte.</p>
         </div>

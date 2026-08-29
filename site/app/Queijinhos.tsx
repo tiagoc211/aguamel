@@ -83,7 +83,7 @@ export default function Queijinhos() {
     <section className="cheeses" id="queijinhos" ref={sectionRef} aria-labelledby="cheeses-title">
       <div className="cheeses-scene">
         <div className="cheeses-heading">
-          <p className="section-number">03 · Os queijinhos</p>
+          <p className="section-number">04 · Os queijinhos</p>
           <h2 id="cheeses-title">Seis pequenos<br />sabores.</h2>
         </div>
 
