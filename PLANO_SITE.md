@@ -36,7 +36,7 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 - [x] **Entrada:** a composição expandida da fotografia da família à porta da Água Mel ocupa o hero e acompanha o convite “Entre”.
 - [x] **Os quatro cerros:** mapa simbólico com a fachada da Água Mel ao centro e Galvana, Francelheira, Castelo e Rocha Maior dispostos à sua volta.
 - [x] **Uma casa com história:** composição visual com a vista de Alte, a peça de madeira e fotografias antigas; identificação detalhada pendente da família.
-- [x] **Arquivo de Alte:** 19 fotografias antigas isoladas das molduras, endireitadas e reunidas numa galeria editorial responsiva.
+- [x] **Arquivo de Alte:** 18 fotografias antigas distintas, isoladas das molduras, endireitadas e reunidas numa galeria editorial responsiva.
 - [x] **Os queijinhos:** fotografia conjunta; a separação começa apenas quando a secção ocupa todo o ecrã e termina com os seis nomes ligados por setas à fotografia, que permanece translúcida no centro.
 - [x] **Pastéis da casa:** pastel de nata à esquerda e mais acima, pastel de amêndoa à direita e mais abaixo, ambos grandes e com rotação ligada ao scroll.
 - [x] **Visite-nos:** morada, mapa, Instagram e horário das 09:00 às 17:00; sem telefone por opção da casa.
@@ -69,7 +69,7 @@ Um protótipo navegável apenas da página inicial, com:
 2. silhueta dos quatro cerros;
 3. uma secção de história;
 4. pastel de nata e pastel de amêndoa juntos, com movimento ligado ao scroll;
-5. um arquivo visual com 19 fotografias antigas de Alte;
+5. um arquivo visual com 18 fotografias antigas de Alte;
 6. a apresentação dos seis queijinhos;
 7. uma secção de visita/contactos.
 

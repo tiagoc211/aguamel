@@ -8,7 +8,6 @@ const archiveImages = [
   { id: 1180, width: 1533, height: 1026 },
   { id: 1181, width: 1536, height: 1024 },
   { id: 1182, width: 1536, height: 1024 },
-  { id: 1183, width: 1504, height: 1046 },
   { id: 1184, width: 1547, height: 1016 },
   { id: 1185, width: 1600, height: 938 },
   { id: 1186, width: 1506, height: 1045 },
