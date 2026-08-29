@@ -177,6 +177,11 @@ export default function Home() {
             <figcaption>Pastel de amêndoa</figcaption>
           </figure>
         </div>
+
+        <div className="pastries-seal" aria-hidden="true">
+          <span>Água Mel</span>
+          <small>Alte · 1997</small>
+        </div>
       </section>
 
       <section className="visit" id="visitar" aria-labelledby="visit-title">
