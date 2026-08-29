@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
   alternates: { canonical: '/' },
   icons: {
-    icon: [{ url: '/favicon.png', type: 'image/png', sizes: '512x512' }],
-    shortcut: '/favicon.png',
-    apple: '/favicon.png',
+    icon: [{ url: '/favicon-shop.png', type: 'image/png', sizes: '512x512' }],
+    shortcut: '/favicon-shop.png',
+    apple: '/favicon-shop.png',
   },
   robots: { index: true, follow: true },
   openGraph: {
