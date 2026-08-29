@@ -66,11 +66,11 @@ Frase principal proposta: **“Uma casa com história. Sabores com lugar.”**
 Um protótipo navegável apenas da página inicial, com:
 
 1. hero com a versão expandida da fotografia da família e botão “Entre”;
-2. os dois pastéis 2D com rotação ligada ao scroll;
-3. silhueta dos quatro cerros;
-4. uma secção de história;
+2. silhueta dos quatro cerros;
+3. uma secção de história;
+4. pastel de nata e pastel de amêndoa juntos, com movimento ligado ao scroll;
 5. um arquivo visual com 19 fotografias antigas de Alte;
-6. pastel de nata e pastel de amêndoa juntos, com movimento ligado ao scroll;
+6. a apresentação dos seis queijinhos;
 7. uma secção de visita/contactos.
 
 Depois de aprovada esta experiência, avançamos para conteúdo completo, traduções e acabamento.

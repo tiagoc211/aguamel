@@ -138,31 +138,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="archive" aria-labelledby="archive-title">
-        <div className="archive-heading">
-          <p className="section-number">03 · Arquivo de Alte</p>
-          <h2 id="archive-title">Alte, noutro<br />tempo.</h2>
-          <p>Ruas, casas e pessoas da aldeia, vistas agora sem as molduras.</p>
-        </div>
-
-        <div className="archive-grid">
-          {archiveImages.map((photo, index) => (
-            <figure className="archive-photo" key={photo.id}>
-              <Image
-                src={`/images/arquivo-alte/retrato-${photo.id}.webp`}
-                alt={`Fotografia antiga de Alte, arquivo ${String(index + 1).padStart(2, "0")}`}
-                width={photo.width}
-                height={photo.height}
-                sizes="(min-width: 1100px) 31vw, (min-width: 760px) 43vw, 100vw"
-              />
-              <figcaption>Arquivo {String(index + 1).padStart(2, "0")}</figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
-
-      <Queijinhos />
-
       <section className="pastries-feature" aria-label="Pastéis da Água Mel">
         <div className="pastries-pair">
           <figure className="pastry-display pastry-display-nata">
@@ -195,6 +170,31 @@ export default function Home() {
           <small>Alte · 1997</small>
         </div>
       </section>
+
+      <section className="archive" aria-labelledby="archive-title">
+        <div className="archive-heading">
+          <p className="section-number">03 · Arquivo de Alte</p>
+          <h2 id="archive-title">Alte, noutro<br />tempo.</h2>
+          <p>Ruas, casas e pessoas da aldeia, vistas agora sem as molduras.</p>
+        </div>
+
+        <div className="archive-grid">
+          {archiveImages.map((photo, index) => (
+            <figure className="archive-photo" key={photo.id}>
+              <Image
+                src={`/images/arquivo-alte/retrato-${photo.id}.webp`}
+                alt={`Fotografia antiga de Alte, arquivo ${String(index + 1).padStart(2, "0")}`}
+                width={photo.width}
+                height={photo.height}
+                sizes="(min-width: 1100px) 31vw, (min-width: 760px) 43vw, 100vw"
+              />
+              <figcaption>Arquivo {String(index + 1).padStart(2, "0")}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <Queijinhos />
 
       <section className="visit" id="visitar" aria-labelledby="visit-title">
         <div className="visit-heading">
